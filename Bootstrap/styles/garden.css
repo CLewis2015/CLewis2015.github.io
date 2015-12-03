@@ -1,0 +1,20 @@
+body {
+    background: #fafad2 ;
+}
+#logo {
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1; 
+}
+.jumbotron {
+    background-image: url(../garden/flowersPurple.jpg);
+    background-repeat: no-repeat;
+     
+}
+.coverFont {
+    color: white; 
+    text-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.8);
+    padding-top: 20px;
+}     

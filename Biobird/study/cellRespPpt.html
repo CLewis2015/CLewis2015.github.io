@@ -1,0 +1,75 @@
+<!DOCTYPEhtml>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <title> Biology Bird </title>
+    <link type="text/css" rel="stylesheet" href="../styles/biologybird.css">
+    <script src="../../scripts/jquery-1.11.3.js"></script>
+    <script src="../scripts/biologybird.js"></script>
+    </head>
+    
+<body id=notes>
+    
+    <nav> 
+        <a href ="../../index.html"><img src="../../images/globe.png" id="logo"></a>
+        <ul role=navigation>
+            <li><a href="../biologybird.html"> Home </a></li>
+            <li><a href="cellRespPpt.html">Notes</a></li>
+            <li><a href="cellLab.html">Lab</a></li>
+            <li><a href="mitosis.html">Study</a></li>
+            <li><a href="QandA.php">Quiz</a></li>
+        </ul>
+    </nav>
+   
+<h1>Cellular Respiration PowerPoint</h1>   
+<div class="wrapper">
+    <!--first slide-->
+    <img src="Cellular_Respiration/Slide1.gif" id="mainImage" width="60%" height="60%" alt="cellular respiration powerpoint" >
+    
+    <!--click on arrow and it swaps out  current image with previous-->
+    <a href="#" style= "float: left" onclick="swapImage(currentIndex-1);" class="arrow">
+        <img src="../../AmericaTheBeautiful/images/arrow-scroll-left.png" alt="Back" id="back">
+    </a>
+   
+    <!--click on arrow and it swaps out  current image with next-->
+    <a href="#" style= "float: right" onclick="swapImage(currentIndex+1);" class="arrow">
+        <img src="../../AmericaTheBeautiful/images/arrow-scroll-right.png" alt="Next" id="next">
+    </a>
+    
+    <div> <br>
+    <!--when clicked, goes back to the first slide-->
+        <a href="#" onclick="swapImage(1);" class="slide">
+            <h4>FIRST SLIDE </h4></a>
+     <!--when clicked, goes to the last slide-->
+        <a href="#" onclick="swapImage(maxIndex);" class="slide"><h4>LAST SLIDE</h4></a>
+    </div>
+    
+</div>
+    
+    <!-------Slide Show------->
+    <script type="text/javascript">
+        //Initilize start value to 1 'For Slide1.GIF'
+            var currentIndex = 1;
+            var maxIndex=8;     //Set to the number of slides in presentation.
+        
+        //Check if we are at the last image already, return if we are.
+            function swapImage(imageIndex){
+                if(imageIndex>maxIndex){
+                    currentIndex=maxIndex;
+                    return;
+                }
+        //Check if we are at the first image already, return if we are.
+            if(imageIndex<1){
+                currentIndex=1;
+                return;
+            }
+                
+            currentIndex=imageIndex;
+                
+        //Otherwise update mainImage
+            document.getElementById("mainImage").src='Cellular_Respiration/Slide' + currentIndex + '.gif';
+        return;
+    }
+    </script>
+</body>
+</html>

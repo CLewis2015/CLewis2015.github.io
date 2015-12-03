@@ -1,0 +1,233 @@
+html {
+background-color: #fff;   
+}
+body{
+    background-color: #F5F5DC;
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px 0;
+    margin-top: -5px; 
+}
+nav {
+    background: url(../images/peacockFeathers.jpg) #3B7A57 no-repeat; 
+    padding: 0 0 1em 0; 
+    margin-top: -15px;
+    text-align: left;
+}
+nav li {
+    display: inline;
+    }
+nav a { 
+    text-decoration: none;
+    color: aliceblue; 
+    padding: 1em; 
+    font-family: Futura, Arial, sans-serif; 
+    font-size: 1.25em;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+    -webkit-transition: background .65s ease-in-out;
+    -o-transition: background .65s ease-in-out;
+    -moz-transition: background .65s ease-in-out;
+    transition: background .65s ease-in-out;   
+}
+nav a:hover {
+    background: rgba(0, 0, 255, 0.7);
+}
+a.current {
+    background: rgba(0, 191, 255, 0.7);
+}
+#logo {
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: darkseagreen;
+}
+header h1 {
+    font-size: 3em; 
+    font-family: "Comic Sans", "Georgia", serif;
+}
+header h3 {
+    font-family: fantasy;
+}
+header img {
+    border: 2px inset #000;
+    display: inline;
+    margin-bottom: 10px;
+}
+div {
+    text-align: center;
+}
+aside, section {
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+    height: 200px;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    border: double 2px black;
+    border-radius: 25px;
+    background-color: darkkhaki;
+}
+aside h2, section h2 {
+    border-bottom: dashed 2px #000;
+    font-size: 1.5em;
+}
+aside h3 {
+    text-align: left;
+}
+aside li {
+    list-style: none;
+    margin-left: -10px;
+}
+section ul {
+    margin-top: 1px;   
+}
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: darkseagreen;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+h3 {
+    text-align: center;
+}
+/*-----------Cell Lab--------------*/
+object {
+    margin-top: 20px;    
+    margin-left: 2.5%; 
+    width: 95%;
+}
+/*----------------Study: Mitosis------------------*/
+.guess_box {
+    border: solid 3px;
+    display: inline-block;
+    float: left;
+    height: 200px;
+}
+.guess_box img {
+    height: 200px;
+    width: 200px;
+    padding-bottom: 0px;
+}
+.guess_box p {
+    border: 3px solid;
+    border-top: 1px solid;
+    padding: 10px;
+    margin-top: -3px;
+    background-color: #fff;
+    margin-left: -3px;
+    margin-right: -3px;
+    width: 180px;
+}
+.row {
+    height: 300px;
+    width: 80%;
+    margin-left: 5%;
+    text-align: center;
+    padding-left: 10%;
+}  
+.row .guess_box {
+    vertical-align: top;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 15%;
+}
+/*----------------Notes: ppt-----------------*/
+#notes .wrapper {
+    background-color: beige;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 20px;
+}
+#mainImage {
+    width: 80%;
+    border: 2px solid;
+    margin-top: 20px;
+    margin-left: 5%;
+    }
+.arrow img{
+    margin-top: 100px;
+    height: 50px;
+    }
+#notes h4 {
+    display: inline;
+    background-color: darkseagreen;
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    height: 20px;
+    width: 200px;
+    margin: 20px;
+    }
+.wrapper a {
+    color:#000;
+    text-decoration: none;
+}
+/*----------------QandA------------------*/
+fieldset {
+    width: 80%;
+    margin-left: 10%
+}
+legend {
+    font-weight: bold;
+}
+form {
+    margin-top: 10px;
+}
+#score {
+    background-color: #03c;
+    color: #fff;
+    margin-left: 45%;
+    padding: 10px;
+    border-radius: 25px;
+    border: #cfc;
+    font-size: .8em;
+}
+#messageArea {
+    margin-left: 80%;
+} 
+/*-----medium viewport-----*/
+@media screen and (max-width: 768px){
+    aside, section {
+        width: 75%;
+    }
+    #notes h4 {
+        display: block;
+        clear: both;
+        width: 50%;
+        margin-left: 25%;
+    }
+    #mainImage {
+        width: 100%;
+        margin-left: 0;
+    }
+    .arrow img{
+        float: none;
+        margin: 10px 20px;
+    }
+    .guess_box {
+        display: block;
+    }
+    .row {
+        height: 800px;
+    }
+    .row .guess_box {
+        margin-left: 25%;
+    }   
+}
+/*-----to fix issue with mitosis background transition-----*/
+@media screen and (min-width: 768px) and (max-width: 1150px){
+    #mitosis .wrapper {
+        height: 900px;
+    }  
+}
+    

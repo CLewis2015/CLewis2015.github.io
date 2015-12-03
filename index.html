@@ -1,0 +1,168 @@
+<!doctype html>
+<html> 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+    <title>Crystal Lewis</title>
+    <link rel= "stylesheet" href= "styles/lewisPortfolio.css">
+    <script src = "scripts/jquery-1.11.3.js"></script>
+    <script src="scripts/lewisPortfolio.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="menu-button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+            <a class="logo" target="_self" href="#top"><img src="images/globe.png" style="height: 50px"></a> 
+            <ul class="navbar open"> 
+            <a target="_self" href="#projects"><li>Projects</li></a>
+            <a target="_self" href="#about"><li>About</li></a>
+            </ul>
+        </nav>
+    </header>
+  
+<div class="body">     
+    <div class="hero"><br>
+        <div class="container">
+        <h1>Crystal Lewis</h1>
+            <p>Front End Web Developer</p>
+            <img src="images/globe.png" style="height: 80px">
+            <div id="projects"></div>
+            <br> 
+        </div>
+    </div>
+
+<div class="col-container"><br><h2>Projects</h2>
+    
+    <aside class="col">
+        <a href="AmericaTheBeautiful/AmericaTheBeautiful.html">
+            <div class="project">
+                <p><img src="images/amBeau.jpg"></p>
+                    <div class= "description"><h3>America The Beautiful</h3> 
+                        <p>A website built with HTML5, CSS3 and jQuery.</p> 
+                    </div>
+            </div>    
+        </a>    
+    </aside>
+    
+    <div class="col main"> 
+        <a href="school/pd.html">
+            <div class="project">
+                <p><img src="images/school.jpg" ></p>
+                <div class= "description"><h3>Griffin Shool District</h3> 
+                    <p>Webpage using AJAX and JSON.</p> 
+                </div>  
+            </div>
+        </a>
+    </div>
+
+    <div class = "col last">
+        <a href="Biobird/biologybird.html">
+            <div class="project">
+                <p><img src="images/biobirdHome.jpg"></p>
+                <div class= "description"><h3>Biology Bird</h3> 
+                    <p>Simple website with embedded documents, jQuery and php interactivity.</p> 
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <aside class="col">
+        <a href="magicEightBall/magicEightBall.html">
+            <div class="project">
+                <p><img src="images/magic.jpg" ></p>
+                <div class= "description"><h3>Magic Eight Ball</h3>
+                    <p>A jQuery game.</p> 
+                </div>
+            </div>
+        </a>
+    </aside>
+    
+    <div class="col main"> 
+        <a href="Bootstrap/garden.html">
+            <div class="project">
+                <p><img src="images/susiesGarden.jpg"></p>
+                <div class= "description"><h3>Susie's Garden</h3> 
+                    <p>A website using Bootstrap framework.</p> 
+                </div>  
+            </div>
+        </a>
+    </div>
+
+    <div class = "col last">
+        <a href="listApp/list.html">
+            <div class="project">
+                <p><img src="images/ipodList.jpg" ></p>
+                <div class= "description"><h3>Things To Do</h3> 
+                    <p>A Javascript and jQuery list application.</p> 
+                </div>
+            </div>
+        </a>
+    </div>
+</div> 
+
+<div id="about"></div><br><br><br>
+    
+<section id="aboutme"><br>
+    <h2>About</h2><br>
+    
+    <div id="tabbed"> 
+        <ul class="tab-list">
+            <li class="active" style="margin-left: -40px"><a class="tab-control" href="#tab-1">About Me</a></li>
+            <li><a class="tab-control" href="#tab-2">My Skills</a></li>
+            <li><a class="tab-control" href="#tab-3">About This Site</a></li>
+        </ul>
+    
+        <div class="tab-panel active" id="tab-1">
+            <p>I am a Renaissance woman currently taking on the world of computers. My interests lie in science, nature, outdoor recreation, dance, and arts and crafts. I am always ready for a new adventure and the possibilities with technology are endless!
+            </p>
+        </div>
+        
+        <div class="tab-panel" id="tab-2">
+        <table>
+            <tr>
+            <td>
+                <ul> Front End:
+                    <li>HTML</li> 
+                    <li>CSS</li> 
+                    <li>XML</li> 
+                    <li>JavaScript</li>
+                    <li>JSON</li>
+                </ul>
+            </td>
+            <td>
+                <ul> Back End: 
+                    <li>PHP</li> 
+                    <li>MySQL</li>
+                </ul>
+            </td>
+            <td>
+                <ul>JavaScript Libraries:
+                    <li>jQuery</li>
+                    <li>jQuery UI</li>
+                    <li>AJAX</li>
+                    <li>Bootstrap</li> 
+                </ul>
+            </td>
+        </tr>
+            </table>
+        </div>
+        
+        <div class="tab-panel" id="tab-3">
+            <p>This site was built with a responsive design. Using responsive CSS, the layout changes to fit different viewport sizes. While the content remains the same, each of the three main devices (Desktops, tablets, and iPods) have their own unique styling.</p>
+        </div>
+        </div>
+</section>
+     
+    <footer>
+
+        </footer>
+            
+    </div>    
+    </body>
+</html>

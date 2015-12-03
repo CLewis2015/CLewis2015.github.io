@@ -1,0 +1,226 @@
+/*---------FOR ALL PAGES----------*/
+body {
+    font-size: large;
+    background: #a11111;
+    padding:  0px;
+}
+h1 {
+    font-size: 200%;
+    font-weight: bolder;
+    font-family: fantasy;
+    color: #a11111;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+h2 {
+    color: #a11111;
+    border-bottom: thick solid;
+}
+#logo {
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+/*---------Navigation Bar------*/
+#menu {
+    border: medium #a11111 outset;
+    background-color:#a11111;
+    color:tan;
+    padding: 0px;
+    margin: 0px 50px 10px 50px;
+}
+#menu a:link {
+    color: #eaf3da;
+    text-decoration: none;
+}
+#menu a:visited {
+   color:antiquewhite;
+}
+#menu ul {
+    list-style-type: none;
+    display: inline;
+    background-color: #a11111;
+}
+#menu li {
+    font-family: fantasy;
+    font-size: 1em;
+    font-weight: bolder;
+    width: 8em;
+    border-right: tan 2px solid;
+    display: inline-block;
+    color: antiquewhite;
+    margin-right: -4px;
+    position: relative;
+    padding: 15px 20px;
+    background: #a11111;
+    cursor: pointer;
+    text-shadow: 0 2px 0 #000; 
+}
+#menu li:hover {
+    background: cadetblue;
+    color: #fff;
+}
+/*-------For Dropdown Menu--------*/
+#menu li ul {
+    padding: 0;
+    margin-top: 10px;
+    position: absolute;
+    top: 48px;
+    left: -1px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+#menu li ul li { 
+    background: cadetblue; 
+    border: none;
+    display: block; 
+    color: #fff;
+    text-shadow: 0 2px 0 #000;
+    position: relative;
+    float: none;
+    z-index: 1;
+    border: tan 1px dotted;
+    border-collapse: collapse; 
+}
+#menu li ul li:hover { 
+    background: tan;
+    border: 1px solid #a11111;
+}
+/*------Makes dropdown appear when moused over*/
+#menu li:hover ul {
+    display: block;
+    color: tan;
+    opacity: 1;
+    visibility: visible; 
+}
+#footer {
+    font-size: small;
+    text-align: center;
+    border: medium #a11111 outset;
+    background-color:#a11111;
+    margin: 0px 20px 0px 20px;
+    color: #eaf3da;
+}
+.block {
+    border: ridge #a11111;
+    padding: 20px;
+    margin: 10px 50px;
+    background: #eaf3da;
+}
+.main {
+    background: tan;
+    padding: 10px;
+    border-style:double;
+    margin: -5px;
+    border-color: #a11111;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+td {
+    padding: 0px;
+    margin: 20px;
+    text-align: center;
+    vertical-align: top;
+    width: 25%;
+}
+/*----------LINKS---------*/
+a:visited {
+    color:#a11111;  
+    text-decoration: none;
+}
+a:link {
+    color: #a11111; 
+    text-decoration: none;
+}
+/*----------THUMBNAILS ON HOME---------*/
+.imageHolder {
+    opacity: 0.8;
+    margin-top: 0px;   
+}
+.imageHolder:hover {
+    opacity: 1.0;   
+}
+.imageHolder section {
+    text-align: center;   
+}
+/*----------SLIDESHOW ON HOME---------*/
+div#slideshow{
+ position: relative; 
+ overflow: hidden;
+}
+figure#imagestrip, div#slideshow {
+ box-sizing: border-box;
+}
+div#slideshow, fig#imagestrip img {
+    min-width: 100%;
+    height: 366px;  
+}
+figure#imagestrip {
+    position: relative;
+    width: 7752px;
+    margin: 0px;
+}
+/*slider with fade in/out transition*/
+@keyframes slider {
+    0% {transform:translateX(0px);}
+    20% { transform:translateX(0px);}
+    25% {transform:translateX(-1292px);}
+    45% {transform:translateX(-1292px);}
+    50% {transform:translateX(-2589px);}  
+    70% {transform:translateX(-2589px);}
+    75% {transform:translateX(-3886px);}
+    95% {transform:translateX(-3886px);} 
+    100% {transform:translateX(-5178px);}   
+}
+@keyframes fader {
+    0% {opacity: 1;}
+    70% {opacity: 1;}
+    85% {opacity: 0; ease-out;}
+    90% {opacity: 0;}
+    99% {opacity: 0;}
+    100% {opacity: 1; ease-in;}
+}
+figure#imagestrip {
+    animation: slider 20s infinite, fader 5s infinite;
+}
+div#slideshow:hover figure#imagestrip {
+    animation-play-state: paused;
+    opacity: 0.9;
+}
+div#slideshow:hover:before {
+    content: "||";
+    font-size: 100px;
+    position: absolute;
+    left: 60px;
+    top: 60px;
+}
+.right {
+    float: right;
+    margin-right: 20%;
+}
+/*--------FOR MAP-------*/  
+.state {
+  fill:tan;
+  stroke:#000;
+  stroke-width:0.75;
+  stroke-opacity:1;
+}
+svg {
+    margin-left: 20%; 
+    width:auto;   
+}
+svg image { 
+    opacity: 0; 
+    transition: 400ms opacity ease; 
+}
+svg image:hover { 
+    opacity: 1;
+}

@@ -1,0 +1,192 @@
+/*---------adapted from http://www.frontendwebhelp.com/javascript/jquery-photo-gallery.php-------------*/
+
+/* ------------------------------------------------------ */
+/* ----- Gallery carousel - large image ----------------- */
+/* ------------------------------------------------------ */
+.gallery-carousel {
+    margin-bottom: 10px;
+    position: relative;
+    width:100%;
+}
+#gallery-large-image {
+    height: 384px;
+    overflow: hidden;
+    position: relative;
+    width: 800px;
+  
+}
+#gallery-large-image table {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+#gallery-large-image table td {
+    font-size: 0;
+    padding: 0;
+    text-align: center;
+}
+/*---set to image size with a little extra width---*/
+#gallery-large-image img {
+    max-height: 384px;
+    max-width: 600px;
+    border: solid 3px tan;
+}
+/*---clickable sections to move images left and right---*/
+a.gallery_hover {
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 384px;
+    left: 70px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    width: 300px;
+}
+a.gallery_hover:hover {
+    opacity: 0.5;
+}
+a.gallery_hover_next {
+    left: 430px;
+    width: 310px;
+}
+a.gallery_hover div {
+    background: transparent url("../images/slideshow_sprite.gif") no-repeat 0 0;
+    height: 60px;
+}
+a.gallery_hover div.anchor-fill { /* required so that whole anchor is clickable in IE */
+    background-position: -5000px 0;
+    height: 145px;
+}
+a.gallery_hover_prev div {
+    background-position: 0 0;
+}
+a.gallery_hover_next div {
+    background-position: 260px -60px;
+}
+#gallery-large-image a.arrow-inactive {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+
+/* ------------------------------------------------------ */
+/* ------ Gallery carousel - thumbnails ----------------- */
+/* ------------------------------------------------------ */
+#gallery-thumbnails {
+    margin:10px 0;
+    position: relative;
+}
+#thumbnail-slider {
+    position:relative;
+}
+.gallery-thumbs {
+    background-color: transparent;
+    font-size: 0;
+    height: 49px;
+    left: 75px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width:625px;
+}
+.gallery-thumbs a {
+    display:block;
+    float: left;
+    position: relative;
+}
+.gallery-thumbs a img {
+    border:2px solid #5A5A5A;
+    height:45px;
+    margin:0 1px;
+    width:66px;
+}
+.gallery-thumbs a img:hover  {
+    border: 2px solid #A11111;
+}
+.gallery-thumbs a.selected-image img {
+    border: 2px solid #DDDDDD;
+}
+.zoom-icon {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.zoom-icon img {
+  opacity: 0.5;
+}
+img.scroll-arrow {
+    cursor: pointer;
+    left: 6px;
+    position: absolute;
+    top: 9px;
+}
+#ffw-link {
+    left: 710px;
+}
+#gallery-thumbnails img.scroll-arrow:hover {
+    opacity: 0.7;
+}
+#gallery-thumbnails img.arrow-inactive,
+#gallery-thumbnails img.arrow-inactive:hover {
+    cursor: auto;
+    opacity: 0.2;
+}
+/*-----thumbnail arrows----*/
+#rew-link {
+    left: 50px;
+}
+#rew-link-2:hover {
+    background-position: -79px 0;
+}
+#rew-link-2.arrow-inactive {
+    background-position: -158px 0;
+    cursor: default;
+    left: 0;
+}
+#ffw-link-2 {
+    background-position: 0 -38px;
+    right: 0;
+}
+#ffw-link-2:hover {
+    background-position: -79px -38px;
+}
+#ffw-link-2.arrow-inactive {
+    background-position: -158px -38px;
+    cursor: default;
+}
+#scroll-text-info {
+    font-size: 0.9em;
+    font-weight: bold;
+    left: 0;
+    text-align: center;
+    top: 40px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 25%
+}
+
+/* ------------------------------------------------------ */
+/* ------ Gallery carousel - caption, title ------------- */
+/* ------------------------------------------------------ */
+#gallery-image-info {
+    height: auto;
+    position: relative;
+    float: right;
+    width: 350px;
+    
+}
+#gallery-image-info h3 {
+    color: #000;
+    font-weight: bold;
+    margin-top: 0;
+}
+#gallery-image-location {
+    font-size: 90%;
+    line-height: 1;
+}
+#thumbnail-descriptions,
+#thumbnail-dates {
+    display: none;
+}

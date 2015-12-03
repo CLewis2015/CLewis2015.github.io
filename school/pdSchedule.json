@@ -1,0 +1,69 @@
+{
+    "AA": [
+        {
+        "time":"9:30",
+        "title":"Instructional Technology Tools"
+        },
+         {
+        "time":"10:30",
+        "title":"New Science Standards"
+        }, 
+        {
+        "time":"11:30",
+        "title":"Lunch- On your own"
+        },
+        {
+        "time":"12:30",
+        "title":"Science Safety"
+        }, 
+        {
+        "time":"1:30",
+        "title":"CCSS Science Writing"
+        }
+        ],
+    "BA": [
+        {
+        "time":"9:30",
+        "title":"SmartBoard Use and Tools"
+        },
+         {
+        "time":"10:30",
+        "title":"Classroom First Aid"
+        }, 
+        {
+        "time":"11:30",
+        "title":"Lunch- On your own"
+        },
+        {
+        "time":"12:30",
+        "title":"Using Discus Resources in the Classroom"
+        }, 
+        {
+        "time":"1:30",
+        "title":"Powerful Presentations"
+        }
+        ],
+    "CA": [
+        {
+        "time":"9:30",
+        "title":"Teacher Toolbox"
+        },
+         {
+        "time":"10:30",
+        "title":"Gang Awareness"
+        },
+        {
+        "time":"11:30",
+        "title":"Lunch- On your own"
+        },
+        {
+        "time":"12:30",
+        "title":"Research Remix"
+        }, 
+        {
+        "time":"1:30",
+        "title":"Data and More Data"
+        }
+        ]
+}
+        

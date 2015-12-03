@@ -1,0 +1,36 @@
+<!DOCTYPEhtml>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <title> List </title>
+     <link type="text/css" rel="stylesheet" href="list.css">
+
+     
+    </head>
+    <body>
+        <a href="../index.html"><img src="../images/globe.png" id="logo"></a>
+        <div class="aList">
+      <nav>
+          <button id="add">Add</button><button id="delete">Delete</button><button id="done">Done</button>
+        </nav> 
+            
+     <div id="addBox">
+    <form id="newItemForm">
+            <input type="text" id="userItem" placeholder="Add description..."><button type="submit" id="updateItem">Add Now</button>
+    </form>
+            </div>    
+            <h2> Things To Do<span id="counter"></span></h2>
+            
+    <ul id="toDo">
+        <span class= "removable">X</span>
+        <li>Grocery shopping</li><span class= "removable">X</span>
+        <li>Take out trash</li><span class= "removable">X</span>
+        <li>Mow the lawn</li><span class= "removable">X</span>
+        <li>Do the dishes</li><span class= "removable">X</span>
+        <li>Dentist appt</li>
+        </ul>
+       </div>
+    </body>
+    <script src="jquery-1.11.3.js"></script>
+   <script src="list.js"></script> 
+</html>

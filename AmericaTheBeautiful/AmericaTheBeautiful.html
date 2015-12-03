@@ -1,0 +1,91 @@
+<!DOCTYPEhtml>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <title>America the Beautiful</title>
+    <link type="text/css" rel="stylesheet" href="styles/AmericaTheBeautiful.css"> 
+</head>
+    
+<body>
+    <div class="main"> <!--content wrapper-->
+    
+<nav> 
+    <!--navigation to portfolio page-->
+    <a href="../index.html"><img src="../images/globe.png" id="logo"></a>
+      <!--navigation bar to website pages-->
+      <ul id="menu" role="navigation"> 
+        <a href="#"><li>Home</li></a>
+        <a href="map.html"><li>Map</li></a>
+        <a href="imageGallery.html"><li>Image Gallery</li></a>
+          <!--dropdown menu-->
+          <li style="border: none" ><a href="#" id="submenu">Parks</a>
+          <ul id="drop">
+              <a href="nationalparks/badlands.html"><li>Badlands</li></a>
+              <a href="nationalparks/brycecanyon.html"><li>Bryce Canyon</li></a>
+              <a href="nationalparks/olympic.html"><li>Olympic</li></a>
+              </ul>
+          </li> <!--close dropdown menu-->
+        </ul><!--close navigation bar-->
+</nav>
+        
+<!--name of page and slideshow-->                 
+<header><div class="block">   
+    
+    <div class= "right"><p><em>A dedication to the natural wonders of North America.</em></p></div> 
+        <h1>America the Beautiful</h1>
+    <!--slideshow created using css animation--> 
+    <div id="slideshow">
+        <!--images place in image strip-->
+        <figure id="imagestrip">
+            <img src="images/olympic/dungenessBanner2.JPG" alt="shoreline">
+            <img src="images/santeetlahTrailBanner.JPG" alt="cloudy meadow">  
+            <img src="images/monumentValley/monumentValleyBanner.JPG" alt="red rock formations">
+            <img src="images/olympic/hurricaneRidgeBanner.JPG" alt="snowy mountain top">
+            <img src="images/olympic/dungenessBanner2.JPG" alt="shoreline">
+        </figure>
+    </div><!--close slideshow div-->
+        </div></header>  
+        
+<!--table used to create columns; picture links-->         
+<table><tr>
+<!--first column-->  
+    <td>
+        <div class="block"> 
+            <h2>National Parks</h2>     
+                Badlands, SD<br>
+                <a href="nationalparks/badlands.html">
+                    <img src="images/badlands/badlandsview2thumb.JPG" class="imageHolder" alt="red banded rocks"></a>
+            <br>
+                Bryce Canyon, UT <br>
+                <a href="nationalparks/brycecanyon.html">
+                    <img src="images/bryce/brycecanyonthumb.jpg" class="imageHolder" alt="hoodoos"> </a>
+            <br>
+                Olympic, WA<br>
+                <a href="nationalparks/olympic.html"> 
+                    <img src="images/hurricaneridgethumb.jpg" class="imageHolder" alt="mountain view"></a>
+        </div>
+    </td>
+<!--second column-->
+    <td> 
+        <div class="block">
+           <h2>State Parks</h2>
+            Edisto Beach, SC<br>
+            <a href="ComingSoon.html">
+                <img src="images/edisto1thumb150.JPG" alt="Beach" class="imageHolder"></a>
+        </div>
+    </td>
+<!--third column-->       
+    <td> 
+        <div class= "block">
+           <h2>Other Parks</h2>      
+            Monument Valley <br>
+            <a href="ComingSoon.html">  
+                <img src="images/monumentValley/monumentvalleygimpthumb.JPG" class="imageHolder" alt="red rock formations"></a>
+        </div>
+    </td>
+</tr></table> 
+        
+<div id="footer">All images were taken by Crystal.</div>
+        </div><!--close main content div-->
+</body>
+</html>

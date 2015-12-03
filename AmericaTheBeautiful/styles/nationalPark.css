@@ -1,0 +1,117 @@
+/*---top image in header, changed on individual park page in head style---*/
+.banner {
+    width: auto;
+    height: 275px;
+    background-image: url(../images/badlands/bisonBanner2.JPG); 
+    margin: 0 0 10px 0;
+    padding: 0; 
+}
+
+/*------for the page navigation------*/
+.jumpTo {
+    float: right;
+    font-size: 0.65em;
+    text-align: bottom;
+}
+table {
+    vertical-align: top;
+    margin: 0px auto;
+}
+table td {
+    text-align: left;
+    border-right: ridge 2px #a11111; 
+    padding: 10px;
+}
+       
+h3 {
+    font-family: fantasy;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: 0px;
+    border-bottom-style: ridge;
+    border-bottom-color: #a11111;
+}
+
+/*---for link section---*/
+.block a {
+    font-family: serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.block ul {
+    text-align: left;
+    margin-left: -40px;
+}
+.block ul {
+    font-weight: bolder;
+}
+.block ul li {
+    font-weight: normal;
+    list-style: inside; 
+    margin-left: 5px;
+}
+.block ul li ul li {
+    list-style:square;
+    margin-left: 30px;
+}
+video {
+ width: 80%   
+}
+
+/*------Image Gallery (mobile first design)------*/
+.gallery-image-area .featured-image-item { 
+    display: none; 
+} 
+.gallery-image-area .featured-image-item.active {
+    display: block; 
+}
+ul {
+    list-style: none;
+}
+.gallery-image-area .thumbnail.active { 
+    border: 2px solid #a11111; 
+    padding: 4px 4px 0 4px;
+}
+.thumbnail {
+    float: left;
+    margin: 0px;
+}
+.gallery-description { 
+    clear: left;
+}
+.gallery-showcase, .gallery-description { 
+    width: 90%; 
+    margin: 0 auto;
+    clear: both;
+}
+
+.block .gallery-showcase ul li {
+    list-style: none;
+}
+.block#images {
+    padding-bottom: 100px;
+}
+.featured-image-item img{
+    width: 70%;   
+}
+.featured-images p {
+    float: right;
+    width: 20%;
+}
+
+/*------------for google maps----------*/
+#map {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #a11111;
+}
+#info {
+    float: right;
+    width: 400px;
+    margin-right: 80px;
+}
+
+
+
+
+
