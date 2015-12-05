@@ -19,6 +19,11 @@ $('ul[role="navigation"] a').each(function(){       //for each link in the nav b
     $(".arrow").on("click", function (e) {
         e.preventDefault();    
     });
+    
+//PHP alert
+    $("#phpAlert").click(function () {
+       alert("Sorry, Github Pages does not run PHP."); 
+    });
 });
 
      
