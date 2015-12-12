@@ -22,7 +22,7 @@ $('ul[role="navigation"] a').each(function(){       //for each link in the nav b
     
 //PHP alert
     $("#phpAlert").click(function () {
-       alert("Sorry, Github Pages does not run PHP."); 
+       alert("Sorry, GitHub Pages does not run PHP."); 
     });
 });
 
