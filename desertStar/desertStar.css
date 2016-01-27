@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-image: url(images/brickWall.jpg);
+}
+#banner {
+    background-color: #FFF8DC; 
+    padding: 6px;
+    height: 100px;
+}
+#search {
+    text-align: right;
+}
+nav {
+    background-color: #8B4513;
+    margin-top: -16px;
+    margin-bottom: 0;
+    height: 50px;
+}
+nav ul {
+    padding: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+nav ul li {
+    display: inline;
+    padding: 1% 5% 0.5% 5%;
+    margin-left: -0.5%;
+    border-right: solid 2px;
+    color: #FFF8DC;
+    font-size: 22px;
+}
+nav li:hover {
+    background-color: #FFF8DC;
+    color: #8B4513;
+}
+#slider img{
+    width: 80%;
+    margin: 0 10%;
+    border-left: 2px solid #8B4513;
+    border-right: 2px solid #8B4513;
+}
+#main {
+    width: 80%;
+    margin: -5px 10%;
+    background-color: #FFF8DC;
+    border-left: 2px solid #8B4513;
+    border-right: 2px solid #8B4513;
+}
+table {
+    width: 100%;   
+}
+#products td, #products img{
+    padding: 5%;
+    text-align: center;
+}
+#counter {
+    margin-top: 5px;
+    padding: 2%;
+}
+#counter td {
+    border: solid 1px;
+    padding: 4px; 
+    text-align: center;
+        }
+footer {
+    background-color: #8B4513;
+    margin-top: -16px;
+    color: #FFF8DC;
+}
+footer table tr{
+    vertical-align:top;
+}
+
+ul li ul {
+    display: none;
+}

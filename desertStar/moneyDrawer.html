@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Desert Star</title>
+    <meta charset="utf-8">
+    <!--[if li IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link type="text/css" rel="stylesheet" href="desertStar.css">
+    </head>
+<body>
+    <header>
+        <div id="banner"> 
+        <h1>Money Counter</h1>
+        </div>
+        <nav> 
+    <ul>
+        <a href="index.html"><li>Home</li></a>
+        <li>About Us</li>
+        <li>About Our Artists</li>
+        <li>Contact</li>
+       
+        
+    </ul>
+    </nav>
+    </header>
+    <section id="main">
+    <form method="get" id="opening">
+       
+    <table id="counter">
+        <caption>Opening</caption> 
+    <tr>
+        <th>Change</th>
+        <th></th>
+        <th>Number</th>
+        <th>Amount</th>
+        <th>Bills</th>
+        <th></th>
+        <th>Number</th>
+        <th>Amount</th>
+    </tr>
+    <tr>
+        <td>Quarters</td><td>0.25 x</td>
+        <td><input type="number" id="numberq"></td> 
+        <td id="amountq"></td>
+        <td>Twenties</td><td>20 x</td>
+        <td><input type="number" id="numbertw"></td> 
+        <td id="amountw"></td>
+    </tr>
+    <tr>
+        <td>Dimes</td><td>0.10 x </td>
+        <td><input type="number" id="numberd"></td> 
+        <td id="amountd"></td> 
+        <td>Tens</td><td>10 x</td>
+        <td><input type="number" id="numbertn"></td> 
+        <td id="amountn"></td>
+    </tr>
+    <tr>
+        <td>Nickels</td><td>0.05 x </td>
+        <td><input type="number" id="numbern"></td> 
+        <td id="amountn"></td> 
+        <td>Fives</td><td>5 x</td>
+        <td><input type="number" id="numbertf"></td> 
+        <td id="amounf"></td>
+    </tr>
+    <tr>
+        <td>Pennies</td><td>0.01 x </td>
+        <td><input type="number" id="numberp"></td> 
+        <td id="amountp"></td> 
+        <td>Ones</td><td>20 x</td>
+        <td><input type="number" id="numbero"></td> 
+        <td id="amounto"></td>
+    </tr>
+        <tr>
+            <td colspan="4" style="border: none">Total Change:</td>
+            <td colspan="4" style="border: none">Total Cash:</td>
+        </tr>
+    </table>
+        <h3>Total:</h3><span id="total"></span>
+        <button type="submit" id="calc">Enter</button> 
+        </form>
+    </section>
+    <script>
+        var amountq = document.getElementById("amountq");
+    function count(numberq){
+         var total = numberq * .25;
+        return total;
+    }
+        document.getElementById("calc").onclick = function() { alert(count(document.getElementById("numberq").value));}
+        
+        
+    </script>
+    </body>
+</html>
