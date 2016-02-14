@@ -1,0 +1,43 @@
+/*-------small viewport--------*/
+@media screen and (max-width: 699px){
+   .navbar {
+        overflow: hidden;
+       margin-left: 10%; 
+       height: 15px;
+   }
+    .navbar li  {
+        display: block;     
+    }
+    nav ul li {
+    border-right: none;
+    }
+    .navbar.open {
+        overflow: visible;
+        height: 220px;
+        background-color: #8B4513;
+    }
+    #products td {
+        float: left;
+        margin: 5%;
+    }
+    #slider img{
+        display: none;
+    }
+}
+    /*medium viewport*/
+@media screen and (min-width: 768px){
+    .menu-button {
+        display: none;
+    }
+}
+
+
+
+   /* JavaScript/----part of mobile first design, when menu icon is clicked, nav bar drops down
+    $('.navbar').removeClass('open'); 
+    $('.menu-button').on('click', function(){
+        $('.navbar').toggleClass('open');
+        });
+    $('.navbar li').on('click', function () {
+        $('.navbar').removeClass('open');
+        });*/

@@ -7,45 +7,54 @@
     <link type="text/css" rel="stylesheet" href="desertStar.css">
     </head>
 <body>
+    <div class="content">
     <header>
         <div id="banner"> 
-        <h1>Desert Star</h1>
-        <form target="/search" id="search">
+            </div>
+        <nav>
+            <button class="menu-button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+    
+            <ul class="navbar open">
+        <li>Home</li>
+        <a href="shop/shop.html"><li>Shop</li></a>
+        <li>About Us</li>
+        <a href="artists.html"><li>About Our Artists</li></a>
+        <a href="DScontact.html"><li>Contact</li></a>
+    </ul>
+            <!--<form target="/search" id="search">
             <input name="q" type="search" value="Search this site">
                 <input type="submit">
-            </form>
-            </div>
-        <nav> 
-    <ul>
-        <li style="margin-left: -1.5%;" >Home</li>
-        <li>Shop</li>
-        <li>About Us</li>
-        <li>About Our Artists</li>
-        <li>Contact</li>
-    </ul>
+            </form>-->
             </nav>
             </header>
     
-    <div id="slider">
-    <img src="images/storeFront.jpg">
-    </div>
+    
     
     <section id="main">
+        <div id="slider">
+    <img src="images/storeCrop.jpg">
+    </div>
     <table id="products">
         <tr> 
             <td>Jewelry<br>
-            <a href=""><img src="images/dolls.JPG"></a>
+            <a href=""><img src="images/jewelry.jpg"></a>
             </td>
-            <td>Pottery<br><a href=""><img src="images/dolls.JPG"></a></td>
+            <td>Pottery<br><a href=""><img src="images/pottery.jpg"></a></td>
             <td>Dolls<br><a href=""><img src="images/dolls.JPG"></a></td>
             </tr>
         <tr>
-            <td>Dream Catchers and Mandellas<br><a href=""><img src="images/dolls.JPG"></a></td>    
-            <td>Stones<br><a href=""><img src="images/dolls.JPG"></a></td>    
-            <td>Willow Tree<br><a href=""><img src="images/dolls.JPG"></a></td>
+            <td>Dream Catchers and Mandellas<br><a href=""><img src="images/mandella1.jpg"></a></td>    
+            <td>Stones and Minerals<br><a href=""><img src="images/minerals.jpg"></a></td>    
+            <td>Willow Tree<br><a href=""><img src="images/willowTree.jpg"></a></td>
         </tr>
         <tr> 
-            <td>Carvings<br></td>    
+            <td>Baskets<br><a href=""><img src="images/baskets.jpg"></a></td> 
+            <td>Collectables<br><a href=""><img src="images/horses.jpg"></a></td>
+            <td>Purses<br><a href=""><img src="images/purses.jpg"></a></td> 
             </tr>
         </table>
     </section>
@@ -71,12 +80,14 @@
         <td><h4>For Employees</h4>
             <ul>
                 <li>Clock In/Out</li>
-                <li>Money Counter</li>
+                <a href= "moneyDrawer.html"><li>Money Counter</li></a>
                 <li>Cash Register</li>
             </ul>
         </td>
            </tr> </table>
     </footer>
-    
+        </div>
+    <script src="../scripts/jquery-1.11.3.js"></script>
+    <script src="DS.js"></script>
     </body>
 </html>

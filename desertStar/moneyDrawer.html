@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <!--[if li IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <link type="text/css" rel="stylesheet" href="desertStar.css">
+    
     </head>
 <body>
+    <div class="content">
     <header>
         <div id="banner"> 
-        <h1>Money Counter</h1>
+        
         </div>
         <nav> 
     <ul>
@@ -43,7 +45,7 @@
         <td id="amountq"></td>
         <td>Twenties</td><td>20 x</td>
         <td><input type="number" id="numbertw"></td> 
-        <td id="amountw"></td>
+        <td id="amounttw"></td>
     </tr>
     <tr>
         <td>Dimes</td><td>0.10 x </td>
@@ -51,42 +53,63 @@
         <td id="amountd"></td> 
         <td>Tens</td><td>10 x</td>
         <td><input type="number" id="numbertn"></td> 
-        <td id="amountn"></td>
+        <td id="amounttn"></td>
     </tr>
     <tr>
         <td>Nickels</td><td>0.05 x </td>
         <td><input type="number" id="numbern"></td> 
         <td id="amountn"></td> 
         <td>Fives</td><td>5 x</td>
-        <td><input type="number" id="numbertf"></td> 
-        <td id="amounf"></td>
+        <td><input type="number" id="numberf"></td> 
+        <td id="amountf"></td>
     </tr>
     <tr>
         <td>Pennies</td><td>0.01 x </td>
         <td><input type="number" id="numberp"></td> 
         <td id="amountp"></td> 
-        <td>Ones</td><td>20 x</td>
+        <td>Ones</td><td>1 x</td>
         <td><input type="number" id="numbero"></td> 
         <td id="amounto"></td>
     </tr>
         <tr>
-            <td colspan="4" style="border: none">Total Change:</td>
-            <td colspan="4" style="border: none">Total Cash:</td>
+            <td colspan="3" style="border: none">Total Change:</td><td id="totalChange"></td>
+            <td colspan="3" style="border: none">Total Cash:</td><td id="totalCash"></td>
         </tr>
     </table>
-        <h3>Total:</h3><span id="total"></span>
-        <button type="submit" id="calc">Enter</button> 
+        <input type="button" id="calc" value= "Enter"> 
+        <h3>Total:<span id="total"></span></h3>
+        
         </form>
     </section>
-    <script>
-        var amountq = document.getElementById("amountq");
-    function count(numberq){
-         var total = numberq * .25;
-        return total;
-    }
-        document.getElementById("calc").onclick = function() { alert(count(document.getElementById("numberq").value));}
+     <footer>
+        <table> <tr> 
         
         
-    </script>
+        <td> <h4>Hours</h4>
+        Monday- Saturday<br> 
+        10am-9pm<br>
+        Sunday<br>
+        11am-6pm<br>
+        </td>
+            <td>
+        <h4>Location</h4>
+        7401 N.Cholla Blvd <br>
+        Tucson, Az 85741
+                </td>
+            <td><h4>Misc</h4>
+        Return policy<br>
+        Jobs</td>
+        <td><h4>For Employees</h4>
+            <ul>
+                <li>Clock In/Out</li>
+                <li>Money Counter</li>
+                <li>Cash Register</li>
+            </ul>
+        </td>
+           </tr> </table>
+    </footer>
+    </div>
+    <script src="../scripts/jquery-1.11.3.js"></script>
+    <script src="DS.js"></script>
     </body>
 </html>
