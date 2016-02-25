@@ -33,17 +33,17 @@
     
     <div class= "right"><p><em>A dedication to the natural wonders of North America.</em></p></div> 
         <h1>America the Beautiful</h1>
-    <!--slideshow created using css animation--> 
-    <div id="slideshow">
-        <!--images place in image strip-->
-        <figure id="imagestrip">
-            <img src="images/olympic/dungenessBanner2.JPG" alt="shoreline">
-            <img src="images/santeetlahTrailBanner.JPG" alt="cloudy meadow">  
-            <img src="images/monumentValley/monumentValleyBanner.JPG" alt="red rock formations">
-            <img src="images/olympic/hurricaneRidgeBanner.JPG" alt="snowy mountain top">
-            <img src="images/olympic/dungenessBanner2.JPG" alt="shoreline">
-        </figure>
-    </div><!--close slideshow div-->
+    <div class="slider">
+<div class="slide-viewer">
+    <div class="slide-group">
+        <div class="slide slide-1"><img src="images/olympic/dungenessBanner2.JPG" alt="shoreline"></div>
+        <div class="slide slide-2"><img src="images/santeetlahTrailBanner.JPG" alt="cloudy meadow"></div>
+        <div class="slide slide-3"><img src="images/monumentValley/monumentValleyBanner.JPG" alt="red rock formations"></div>
+        <div class="slide slide-4"><img src="images/olympic/hurricaneRidgeBanner.JPG" alt="snowy mountain top"></div>
+    </div>
+</div>
+<div class="slide-buttons"></div>
+        </div>
         </div></header>  
         
 <!--table used to create columns; picture links-->         
@@ -87,5 +87,7 @@
         
 <div id="footer">All images were taken by Crystal.</div>
         </div><!--close main content div-->
+    <script src="scripts/jquery-1.11.3.js"></script>
+    <script src="scripts/homeSlider.js"></script>
 </body>
 </html>

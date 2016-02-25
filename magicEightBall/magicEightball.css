@@ -4,33 +4,66 @@
     top: 10px;
     left: 10px;
 }
-#eightBody {
-    background-color: #8fbc8f;
+body {
+    background-color: #800000;
+    margin: 0;
 }
-#eightBody h1 {
+header {
+    margin: 0;
+}
+h1 {
     font-size: 2em;
-    color: #000;
+    color: #fff;
     text-align: center;
+    text-shadow: -3px 0 #808, 0 2px #808, 2px 0 #808, 0 -2px #808;
+    margin: 0.5% 1%;
+}
+h2 {
+    text-shadow: -2px 0 #b22222, 0 1px #b22222, 1px 0 #b22222, 0 -1px #b22222;
+    font-family: sans-serif;
 }
 .wrapper {
+    position: relative;
     text-align: center;
-    background-color: #ffe;
     border: solid;
     width: 70%;
-    margin-top: 10px;
-    margin-right: 15%;
-    margin-left: 15%;
-    height: 400px;
+    margin: 0 auto;
+    height: 600px;
 }      
 #shakeIt {
-    margin: 20px; 
+    margin: 0 auto;
+    width: 420px;
+    height: 410px;
 }
 #result {
     font-size: 1.5em;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #fff;
 }
 #ball {
     background-color:#fff;
-    border-radius: 100px;
+    border-radius: 200px;
+    width: 400px;
+    z-index: 2;
+}
+#msg {
+    position: relative;
+    top: -400px;
+    z-index: -1;
+    width: 400px;
+    border-radius: 200px;
+}
+#magicMsg {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    width: 20px;
+    height: auto;
 }
 #shakeIt:hover {
     cursor: pointer;

@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Go Griffins!</title>
-  <link type="text/css" rel="stylesheet" href="pd.css">  
-   <script src="../scripts/jquery-1.11.3.js"></script> 
-    <script src="school.js"></script>
-     
+    <title>Professional Development</title>
+    <link type="text/css" rel="stylesheet" href="pd.css"> 
     </head>
 <body>
-    
     <nav>
-    <a href="../index.html"><img src="../images/globe.png" id="logo"></a>
+        <a href="../index.html"><img src="../images/globe.png" id="logo"></a>
     </nav>
-    <div class="wrapper">
-    <header><img src="Griffin.jpg" ><h1>Griffin Faculty and Staff</h1><h3>Professional Development 2013</h3></header>
-        
-        <section id= "content">
-        <div id="container">
-            <table> 
-                <tr> 
-            <td> <div class="third">
-                <div id="event">
-                   <h4>Pick a day:</h4> 
-                    <a id="aa" href="day1.html">Monday, August 12</a>
-                    <a id="ba" href="day2.html">Tuesday, August 13</a>
-                    <a id="ca" href="day3.html">Wednesday, August 14</a>
-                </div>
-            </div></td>
-            
-            <td style="border-right: dashed 2px #000; border-left: dashed 2px #000">
-                <div class="third">
-                <div id="sessions"></div>
-            </div></td>
-            
-            <td><div class="third"><span id= "description"><h4>Description:</h4></span>
-                <div id="details"></div>
-            </div></td>
-                    </tr>
-                </table>
-        </div>
-    </section>
-    </div>
-        <script src="pdSchedule.js"></script>
-    <script src="menu.js"></script>
-    </body>
+    
+<!--Main content wrapper-->   
+<div class="wrapper">
+    
+    <header>
+        <img src="griffin2.png">
+        <div class="ribbon"><h1>Griffin High School</h1></div>
+    </header>
+    
+<!--Content section for JSON data-->   
+<section id= "content">
+        <table> <caption>Faculty and Staff: Professional Development 2013</caption>
+            <tr> 
+                <td> 
+                    <div id="event">
+                       <h4>Pick a day:</h4> 
+                        <a id="aa" href="day1.html">Monday, August 12</a>
+                        <a id="ba" href="day2.html">Tuesday, August 13</a>
+                        <a id="ca" href="day3.html">Wednesday, August 14</a>
+                    </div>
+                </td>   
+                <td>
+                    <div id="sessions"></div>
+                </td>
+                <td>
+                    <div id= "description"><h4>Description:</h4></div>
+                    <div id="details"></div>
+                </td>
+            </tr>
+        </table>
+</section>
+</div>
+ 
+<script src="../scripts/jquery-1.11.3.js"></script>      
+<script src="pdSchedule.js"></script>
+    
+</body>
 </html>

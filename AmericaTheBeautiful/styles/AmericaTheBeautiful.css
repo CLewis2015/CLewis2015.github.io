@@ -13,6 +13,9 @@ h1 {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+.right {
+    float: right;
+}
 h2 {
     color: #a11111;
     border-bottom: thick solid;
@@ -151,60 +154,40 @@ a:link {
 .imageHolder section {
     text-align: center;   
 }
-/*----------SLIDESHOW ON HOME---------*/
-div#slideshow{
- position: relative; 
- overflow: hidden;
-}
-figure#imagestrip, div#slideshow {
- box-sizing: border-box;
-}
-div#slideshow, fig#imagestrip img {
-    min-width: 100%;
-    height: 366px;  
-}
-figure#imagestrip {
+/*--------SLIDER ON HOME PAGE-------*/ 
+.slide-viewer {
     position: relative;
-    width: 7752px;
-    margin: 0px;
+    overflow: hidden;
+    height: 366px;
+    text-align: center;
 }
-/*slider with fade in/out transition*/
-@keyframes slider {
-    0% {transform:translateX(0px);}
-    20% { transform:translateX(0px);}
-    25% {transform:translateX(-1292px);}
-    45% {transform:translateX(-1292px);}
-    50% {transform:translateX(-2589px);}  
-    70% {transform:translateX(-2589px);}
-    75% {transform:translateX(-3886px);}
-    95% {transform:translateX(-3886px);} 
-    100% {transform:translateX(-5178px);}   
+.slide-group {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
-@keyframes fader {
-    0% {opacity: 1;}
-    70% {opacity: 1;}
-    85% {opacity: 0; ease-out;}
-    90% {opacity: 0;}
-    99% {opacity: 0;}
-    100% {opacity: 1; ease-in;}
-}
-figure#imagestrip {
-    animation: slider 20s infinite, fader 5s infinite;
-}
-div#slideshow:hover figure#imagestrip {
-    animation-play-state: paused;
-    opacity: 0.9;
-}
-div#slideshow:hover:before {
-    content: "||";
-    font-size: 100px;
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
     position: absolute;
-    left: 60px;
-    top: 60px;
 }
-.right {
-    float: right;
-    margin-right: 20%;
+.slide:first-child {
+    display: block;
+}
+.slide-buttons {
+    text-align: center;
+}
+.slide-btn {
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 200%;
+    line-height: 0.5em;
+}
+.slide-btn.active, .slide-btn:hover {
+    color: #a11111;;
+    cursor: pointer;
 }
 /*--------FOR MAP-------*/  
 .state {
