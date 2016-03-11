@@ -15,6 +15,7 @@
     font-size: 0.65em;
     text-align: bottom;
 }
+
 table {
     vertical-align: top;
     margin: 0px auto;
@@ -23,6 +24,8 @@ table td {
     text-align: left;
     border-right: ridge 2px #a11111; 
     padding: 10px;
+    width: 32%;
+    vertical-align: text-top;
 }
        
 h3 {
