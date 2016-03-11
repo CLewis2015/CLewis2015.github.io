@@ -1,7 +1,7 @@
 body {
     margin: 0;
     width: 100%;
-    background-color: #ADD8E6;
+    background-color: #afeeee;
 }
 header {
     position: fixed;
@@ -9,10 +9,9 @@ header {
     width: 100%;
     top: 0px;
 }
-
 /*-----Navigation Bar-----*/
 nav { 
-    background: #000080; 
+    background: #006400;
     padding: 10px;
     height: 4em;
     border-bottom: 2px solid #f0fff0;   
@@ -48,7 +47,7 @@ nav a {
     display: block;
     background-color: #000;
     width: 18px;
-    height: 2.8px;
+    height: 2.3px;
     margin-top: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -60,40 +59,50 @@ nav a {
 }
 /*-----Hero----*/
 .hero {
+    height: 700px;
     text-align: center;
-    padding: 40px 20px;
-    text-shadow: -1px 1px 0px #e0b78a; 
-    background-image:url(../images/desert1sm.jpg); 
+    background-image:url(../images/IMG_6551.JPG); 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    
+    background-position:bottom;
 } 
 .hero h1 {
-    margin: 10px 0; 
+    color: #000;
+    text-shadow: -1px 1px 0px #fff;
+    margin: 0;
+    position: relative;
+    top: 150px;
     font-size: 45px; 
     font-weight: bold; 
 }
 .hero p { 
-    font-size: 22px; 
-    margin: 0 0 30px 0; 
+    font-size: 22px;
+    position: relative;
+    top: 150px;
     font-weight: 200; 
-    line-height: 1.25; 
+    color: #fff;
+    text-shadow: -1px 1px 1px #000;
 }
 /*----content panels----*/
 h2 {
-    margin-left:25%;
     font-size: 1.75em;
-    border-radius: 25px;
-    width: 50%;
-    background-color: #000080;
-    color: #f0fff0;
-    text-shadow: 2px 2px 2px #000;
+    border-bottom: dotted 2px;
     padding: 5px;
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
+} 
+#about, #mytoolkit, #projects{
+    height: 85px;
 }
-.col-container, #aboutme {
-    background-color: #ADD8E6; 
+/*----projects section----*/
+.col-container {
+    width: 90%;
+    margin: 10px auto 20px auto;
+    text-align: center;
+}
+.col-container h2 {
+    width: 100%;
 }
 .col-container:after {
     content: ' ';
@@ -102,97 +111,82 @@ h2 {
 }
 .col {
     float:left;
-    width: 33.3%;
+    margin: 10px 0;
+}
+.col h4 {
+    position: relative;
+    width: 200px;
+    text-align: left;
+    margin: 0 auto;
 }
 .col a {
     text-decoration: none;
     color: #000;
 }
-.project {
-    border: 3px outset #000080; 
-    text-align: center;
-    overflow: hidden;
-    background-color: #f0fff0;
-    margin: 20px;
-    height: 320px;
-}
-.project:hover {
-    border: 3px solid #a11;
-}
-.project img{
-    border: 2px solid #000080;  
+.project { 
+    display: inline-block;
+    margin: 10px;
+} 
+.project img {
+    box-sizing: border-box;
     width: 300px;
-    height: 180px;
-    margin: 5px;
+    height: 200px;
+    border: ridge 5px #fff;    
 }
-.description p {
-    margin-top: -10px;
+.project:hover figcaption { 
+     visibility: visible;
 }
+figcaption { 
+    visibility: hidden;
+    font-family: Baskerville, Garamond, "Times New Roman", serif; 
+    font-style: italic; 
+    background: rgba(0,0,0,0.4); 
+    font-size: 1.25rem; 
+    padding: 20% 2% 0 2%;
+    color: #fff; 
+    position: relative;   
+    height: 132px;
+    margin-top: -200px;
+    left: 3px;
+    width: 280px;
+    text-align: center;
+} 
 li {
- list-style: none;  
+    list-style: none;  
 }
-
-#aboutme {
-    margin: 0 10% 5% 10%;
-    height:400px;
-    }
-#aboutme p{
+#footer {
+    height: 70px;
+} 
+#aboutme, #mytoolkit {  
+    background-color: #ffc0cb;
+}
+#aboutme article {
     padding: 0 10% 5% 10%;
     text-align: left;
 }
-
-#tabbed {
-    width: 100%;
+#aboutme img {
+    float: right;
+    margin: 40px;
+    border-radius: 50px;
 }
-.tab-list li{
-    display: inline;
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    border: 2px solid #000;
-    border-bottom: none;
+#toolkit {
+    padding: 30px;
+    text-align: center;   
 }
-.tab-list li a{
-    color: #f0fff0;
-    text-decoration: none;
-    font-size: 1.25em;
+#toolkit h2 {
+    margin-bottom: 50px;
 }
-.tab-list .active {
-    background-color: #f0fff0;
+#toolkit img {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 20px;
+    padding: 2% 0;
 }
-.tab-list .active a {
-    color:#000;
+#toolkit img:nth-child(3) {
+    width: 120px;
+    margin: 0 20px;
 }
-.tab-panel {
-    display: none;
-}
-.tab-panel.active {
-    display: block; 
-    background-color: #f0fff0;
-    position: relative;
-    border: 2px solid #000;
-    border-top: none;
-    padding-top: 10px;
-    margin-top: -10px;
-}
-.tab-panel p {
-    margin-left: -60px;
-}
-table {
-    width: 100%;
-    
-}
-td {
-   vertical-align: top;
-    
-}
-table ul{
-    font-weight: 800;
-}
-table li {
-    font-weight: 100;
-}
-
 footer { 
     font-size: 1.2em;
     font-family: sans-serif;
@@ -203,16 +197,11 @@ footer {
     color: #f0fff0; 
     overflow: auto; 
     text-shadow: 1px 1px 1px #000;
+    padding: 60px;
 } 
-#toolkit {
-    width: 100%;
+footer img {
+    height: 38px;
 }
-#toolkit img {
-    width: 100px;
-    height: 70px;
-    margin: 0 10px;
-}
-
 /*-------small viewport--------*/
 @media screen and (max-width: 699px){
    .navbar {
@@ -228,38 +217,24 @@ footer {
     }
     .navbar.open {
         overflow: visible;
-        background: #000080;
+        background: #006400;
         max-height: 220px;
-        margin-top: 47px;
+        margin-top: 75px;
     }
-    
-    .description {
-        clear: both;
-        
+    .col {
+        width: 100%;
     }
-    .tab-list li {
-    font-size: .9em;
-    
+    #toolkit img {
+        width: 100px;
+        margin: 0 10px;
     }
-    .tab-panel.active {
-        height: 200px;
+    #toolkit img:nth-child(3) {
+        width: 75px;
     }
-    footer {
-        margin-top: 120px;
+    #footer {
+        height: 0;
     }
-    .project img {
-       margin-left: 15%;
-       
-    }
-    .tab-panel p {
-    margin-left: -10px;
 }
-    table ul{
-    padding: 0 15px;
-}
-
-}
-
 /*medium viewport*/
 @media screen and (min-width: 768px){
     .menu-button {
@@ -267,35 +242,16 @@ footer {
     }
     .navbar {
         margin-left: 10%;
-    } 
-   
-    
+    }  
+   .col {
+        width: 50%;
+    }
 }
-
 /*large viewport*/
-@media screen and (max-width: 1024px){
-    .col{
-        width: 100%;
-        border-bottom: dashed 2px #000080;
-    }
-    
-    .project {
-        height: auto;
-    }
-    .col .project img {
-        float: left;
-        margin-bottom: 15px;
-    }
-    .project .description {
-        padding-top: 20px;
-    }
-    
-    .main img {
-        float: right;   
-    }
-     .tab-panel p {
-    margin-left: -10px;
-}
+@media screen and (min-width: 1024px){
+   .col {
+       width: 33.3%;
+   }
 }
    
 

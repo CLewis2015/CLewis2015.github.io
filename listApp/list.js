@@ -1,39 +1,39 @@
-window.onload = function() {
+window.onload = function () {
     
-//---------check for event object and get target of event
-function getEventTarget (e) {
-    e = e || window.event;  
-    return e.target || e.srcElement;
+//-------check for event object and get target of event
+    function getEventTarget(e) {
+        e = e || window.event;
+        return e.target || e.srcElement;
     }
     
-var $list, $newItemForm; 
-var item = '';      //empty string
-$list= $('ul');     //cache unordered list
+    var $list, $newItemForm;
+    var item = '';      //empty string
+    $list = $('ul');     //cache unordered list
        
-var deleteItem = document.getElementById("delete");
-var add = document.getElementById("add"); 
-var done =  document.getElementById("done");
-var removable = document.getElementsByTagName("span");   
+    var deleteItem = document.getElementById("delete");
+    var add = document.getElementById("add");
+    var done =  document.getElementById("done");
+    var removable = document.getElementsByTagName("span");
     
-function updateCount() {
-    var items = $('li[class != complete]').length;    //number of items in list
-    $('#counter').text(items);  //added to counter
-}
-updateCount();
-   
-//remove list item and place at the bottom
-$list.on('click', 'li', function() {
-    var $this= $(this);	
-    item = $this.text();
-    $this.prev().remove();
-    $this.remove();
-    $list.append('<span class= "removable">X</span><li class=\"complete\">' + item + '</li>');
+    function updateCount() {
+        var items = $('li[class != complete]').length;    //number of items in list that haven't been marked completed
+        $('#counter').text(items);  //added to counter
+    }
     updateCount();
-});   
+   
+//-------remove list item, cross it out and place at the bottom
+    $list.on('click', 'li', function () {
+        var $this = $(this);
+        item = $this.text();
+        $this.prev().remove();
+        $this.remove();
+        $list.append('<span class= "removable">X</span><li class=\"complete\">' + item + '</li>');
+        updateCount();
+    });
     
 //-------makes X visible for deleting items
-function removeItem (e) {
-    for (var i = 0; i < removable.length; i++){
+    function removeItem(e) {
+        for (var i = 0; i < removable.length; i++){
         removable[i].style.visibility = "visible";
         }  
     }
@@ -51,7 +51,7 @@ $list.on('click', 'span', function() {
     
 //-----make add form visible
 function addItem(){ 
-    document.getElementById("addBox").style.visibility = "visible";
+    document.getElementById("addBox").style.display = "block";
 }
     
 //----add items   
@@ -59,7 +59,7 @@ $newItemForm = $('#newItemForm');  //cache form to add new items
 $newItemForm.on('submit', function(e) {
     e.preventDefault(); 
     var text= $('input:text').val();    //get value of input
-    $list.prepend('<span class= "removable">X</span><li>' +text+ '</li>');    //add item to the end of the list
+    $list.prepend('<span class= "removable">X</span><li>' +text+ '</li>');    //add item to the top of the list
     $('input:text').val('');    //empty text input
     updateCount();
 });    
@@ -68,7 +68,7 @@ add.addEventListener('click', function(e){ addItem(e);}, false);
 
 //-----remove add and delete functions    
 function doneAll() {
-    document.getElementById("addBox").style.visibility = "hidden"; 
+    document.getElementById("addBox").style.display = "none"; 
     for (var i = 0; i < removable.length; i++){
         removable[i].style.visibility = "hidden";
     }

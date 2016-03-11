@@ -2,6 +2,9 @@
     height: 50px;
     float: left;
 } 
+body {
+    background-color: #000;
+}
 .aList  {
      width: 300px;
      text-align: center;
@@ -11,21 +14,23 @@
      background-color: #000;
      color: #fff;
  }
+header {
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
+}
 #counter {
+    text-align: center;
     border: 1px solid #fff;
     border-radius: 50px;
     width: 25px;
     background-color: #fff;
     color: #000;
     float: right;
-    font-size: .8em;
-    
-}
-h2 {
-    margin: 30px 20px 0 -50px;
+    font-size: .8em;   
 }
 li {
-    background-color: darkorange;
+    background-color: #ff4500;
 }
 #toDo li {
     height: 40px;
@@ -50,7 +55,7 @@ button {
     margin: 2px;
 }
 #addBox {
-    visibility: hidden;
+    display: none;
 }
 #updateItem {
     float: right;
@@ -82,4 +87,18 @@ form, #newItemButton {
     padding: 20px 10px 10px 10px;
     border-left: 2px inset #ccc;
     visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #dcdcdc;    
+    }
+    .aList {
+        margin-left: 5%;
+        padding: 10px;
+        border: 10px #708090;
+        border-style: groove ridge  ridge groove;
+        
+        border-radius: 25px;
+    }
 }

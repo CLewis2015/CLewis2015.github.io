@@ -3,6 +3,8 @@
     width: auto;
     height: 275px;
     background-image: url(../images/badlands/bisonBanner2.JPG); 
+    background-size: cover;
+    background-position: center;
     margin: 0 0 10px 0;
     padding: 0; 
 }

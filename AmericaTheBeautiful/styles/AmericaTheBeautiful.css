@@ -127,13 +127,7 @@ table {
     width: 100%;
     text-align: center;
 }
-td {
-    padding: 0px;
-    margin: 20px;
-    text-align: center;
-    vertical-align: top;
-    width: 25%;
-}
+
 /*----------LINKS---------*/
 a:visited {
     color:#a11111;  
@@ -158,7 +152,7 @@ a:link {
 .slide-viewer {
     position: relative;
     overflow: hidden;
-    height: 366px;
+    height: 310px;
     text-align: center;
 }
 .slide-group {
@@ -172,6 +166,9 @@ a:link {
     display: none;
     position: absolute;
 }
+.slide img {
+        width: 100%;
+    }
 .slide:first-child {
     display: block;
 }
@@ -207,3 +204,49 @@ svg image {
 svg image:hover { 
     opacity: 1;
 }
+/*small screen*/
+@media screen and (max-width: 699px){
+    .thumbs {
+        text-align: center;
+    }
+    table {
+        margin: 0 auto; 
+        text-align: center;
+    }
+    td {
+        float: left;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    /*#menu li {
+        position: relative;
+        width: 85%;
+        text-align: center;
+        border-right: none;
+        border-bottom: tan 1px dotted;
+    }*/
+}
+/*medium viewport*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .slide-viewer {
+        height: 230px;
+    }
+    
+    td {
+        margin: 0 auto;
+        float: left;
+        width: 32%;
+    }
+}
+/*large viewport*/
+@media screen and (min-width: 1400px){
+    body {
+        max-width: 1200px;
+        margin: 10px auto;
+    }
+
+}
+
+

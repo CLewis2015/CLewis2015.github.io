@@ -4,45 +4,90 @@
     <title>Shop</title>
     <meta charset="utf-8">
     <!--[if li IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <link type="text/css" rel="stylesheet" href="desertStar.css">
-    </head>
+    <link type="text/css" rel="stylesheet" href="DS.css">
+</head>
 <body>
+    <div class="content">
     <header>
-        <div id="banner"> 
-        <h1>Shop</h1>
-        </div>
+        <div id="banner"></div>
         <nav> 
-    <ul>
-        <a href="index.html"><li>Home</li></a>
-        <li>About Us</li>
-        <li>About Our Artists</li>
-        <li>Contact</li>
-    </ul>
-    </nav>
-    </header>
-    
-    <div id="main">
-        <aside>
-    Shop by:
-        <ul>
-            <li><a href = "#" id="cat">Category</a>
-            <ul>
-            <li>Jewelry</li>
-            <li>Pottery</li>
-            <li>Dreamcatchers and Mandells</li>
-            <li>Dolls</li>
+            <a href="../index.html"><img src="../images/globe.png" id="logo"></a>
+            <ul class="navbar open">
+                <a href="index.html"><li style="margin-left: -4px">Home</li></a>
+                <a href="shop.html"><li>Shop</li></a>
+                <a href="artists.html"><li>About Our Artists</li></a>
+                <a href="DScontact.html"><li style="border-right: dotted 2px">Contact</li></a>
             </ul>
-            </li>
-        <li>Company</li>
-        <li>Occassion</li>  
-        </ul>
-    </aside>
-        <section>
-        
+        </nav>
+    </header>
+    <section class="main shop">
+        <aside>
+            <h2>Shop by:</h2>
+            <div id="buttons"><h3>Category</h3></div>
+        </aside> 
+        <section id="merchandise">
+            <div id="gallery">
+                <!-------------MANDELLAS-------------->            
+                <img src="images/mandellas/mandella1.jpg" data-tags="Mandellas" alt="Mandella"/>
+                <img src="images/mandellas/mandella2.jpg" data-tags="Mandellas" alt="Mandella"/>
+                <img src="images/mandellas/mandella3.jpg" data-tags="Mandellas" alt="Mandella"/>
+                <img src="images/mandellas/mandella4.jpg" data-tags="Mandellas" alt="Mandella"/>
+                <img src="images/mandellas/mandella5.jpg" data-tags="Mandellas" alt="Mandella"/>
+                <img src="images/mandellas/mandella6.jpg" data-tags="Mandellas" alt="Mandella"/>
+                <!-------------DREAMCATCHERS-------------->              
+                <img src="images/mandellas/dreamMultiBlack.jpg" data-tags="Dreamcatchers" alt="Dreamcatcher"/>
+                <img src="images/mandellas/dreamMultiTan.jpg" data-tags="Dreamcatchers" alt="Dreamcatcher"/>
+                <img src="images/mandellas/dreamKeyBlue.jpg" data-tags="Dreamcatchers, Keychains" alt="Dreamcatcher"/>
+                <img src="images/mandellas/dreamKeyRed.jpg" data-tags="Dreamcatchers, Keychains" alt="Dreamcatcher"/>
+                <img src="images/mandellas/dreamKeyGreen.jpg" data-tags="Dreamcatchers, Keychains" alt="Dreamcatcher"/>
+                <img src="images/mandellas/dreamKeyTan.jpg" data-tags="Dreamcatchers, Keychains" alt="Dreamcatcher"/>
+                <!-------------DOLLS-------------->   
+                <img src="images/dolls/dollBlue.jpg" data-tags="Dolls" alt="Doll"/>
+                <img src="images/dolls/dollPink.jpg" data-tags="Dolls" alt="Doll"/>
+                <img src="images/dolls/dollPurple.jpg" data-tags="Dolls" alt="Doll"/>
+                <img src="images/dolls/dollTan.jpg" data-tags="Dolls" alt="Doll"/>
+                <img src="images/dolls/dollYellow.jpg" data-tags="Dolls" alt="Doll"/>
+                <img src="images/dolls/dollBeaded.jpg" data-tags="Dolls" alt="Doll"/>
+                <!-------------HORSES-------------->   
+                <img src="images/horses/HOADCaztecQueen.jpg" data-tags="Horses"/>
+                <img src="images/horses/HOADCeagle.jpg" data-tags="Horses"/>
+                <img src="images/horses/HOADCwolf.jpg" data-tags="Horses"/>
+                <!-------------STATUES--------------> 
+                <img src="images/statues/bronzeChief.jpg" data-tags="Bronze Statues"/>
+                <img src="images/statues/bronzeCowboy.jpg" data-tags="Bronze Statues"/>
+                <img src="images/statues/bronzeNative.jpg" data-tags="Bronze Statues"/>
+                <img src="images/statues/statueChief.jpg" data-tags="Statues"/>
+                <img src="images/statues/statueNative.jpg" data-tags="Statues"/>
+                <img src="images/statues/statueNativeW.jpg" data-tags="Statues"/>
+                <img src="images/statues/statueNativeWWater.jpg" data-tags="Statues"/>
+                <img src="images/statues/woodEagle.jpg" data-tags="Carvings"/>
+                <img src="images/statues/woodNative.jpg" data-tags="Carvings"/>
+                <img src="images/statues/woodWolf.jpg" data-tags="Carvings"/>
+                <img src="images/statues/woodWolf2.jpg" data-tags="Carvings"/>           
+                <!-------------JEWELRY-------------->                        
+                <img src="images/Artists/ringHSmith.jpg" data-tags="Jewelry" alt="Sunface Set"/>
+                <img src="images/Artists/ringLocaspin.jpg" data-tags="Jewelry" alt="Turquoise Ring"/>
+                <img src="images/Artists/ringNiha.jpg" data-tags="Jewelry" alt="Multistone"/>
+                <img src="images/Artists/ringSelection.jpg" data-tags="Jewelry" alt="Sunface Flower"/>
+                <img src="images/Artists/ringSkeets.jpg" data-tags="Jewelry" alt=""/>
+                <img src="images/Artists/ringSmith.jpg" data-tags="Jewelry" alt="Multistone"/>
+                <img src="images/Artists/ringSpencer.jpg" data-tags="Jewelry" alt="Tiger Eye"/>
+            </div>
         </section>
+    </section>
+    <footer>
+        <table> 
+            <tr> 
+            <td><h4>Hours</h4>Monday- Saturday<br>10am-9pm<br>Sunday<br>11am-6pm<br></td>
+            <td><h4>Location</h4>7401 N.Cholla Blvd<br>Tucson, Az 85741</td>
+            <td><h4>Misc</h4><a href="return.html">Return Policy</a><br><a href="employees/jobs.html">Jobs</a></td>
+            <td><h4>For Employees</h4><a href= "employees/employee.html"><li>Schedule</li></a><a href= "employees/moneyCounter.html"><li>Money Counter</li></a>
+               </td>
+           </tr> 
+        </table>
+    </footer>
     </div>
-    <script>
-    document.getElementById("cat").onclick = 
-    </script>
-    </body>
+    <script src="../scripts/jquery-1.11.3.js"></script>
+    <script src="scripts/filter.js"></script>
+</body>
 </html>

@@ -4,78 +4,44 @@
     <title>Contact Us</title>
     <meta charset="utf-8">
     <!--[if li IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <link type="text/css" rel="stylesheet" href="desertStar.css">
-    <style>
-        #main {
-            margin-top: 0;
-        }
-        h3 {
-            margin: 0;
-            padding: 5px;
-        }
-        form {
-            padding: 5px;
-        }
-        table {
-            width: 30%;
-        }
-        td {
-            padding: 10px;
-        }
-        
-    </style>
+    <link type="text/css" rel="stylesheet" href="DS.css">
     </head>
 <body>
     <div class="content">
     <header>
-        <div id="banner"> 
-        <h1>Desert Star</h1>
-        </div>
-        <nav> 
-    <ul>
-        <li>Home</li>
-        <li>Shop</li>
-        <li>About Us</li>
-        <li>About Our Artists</li>
-        <li>Contact</li>
-    </ul>
-            </nav>
-        
+        <div id="banner"></div>
+        <nav>
+            <a href="../index.html"><img src="../images/globe.png" id="logo"></a>
+            <ul class="navbar open">
+                <a href="index.html"><li style="margin-left: -4px">Home</li></a>
+                <a href="shop.html"><li>Shop</li></a>
+                <a href="artists.html"><li>About Our Artists</li></a>
+                <a href="DScontact.html"><li style="border-right: dotted 2px">Contact</li></a>
+            </ul>
+        </nav>
     </header>
-    <section id="main">
-        <h3>Visit</h3>
-        7401 N.Cholla Blvd <br>
-        Tucson, Az 85741
+    <section class="main">
+        <div class="contact">
+            <h3>Visit</h3>
+            <p>We are located at Foothills Mall near the food court.</p>
+            <a href="www.shopfoothillsmall.com"><h4>Foothills Mall</h4></a>7401 N.Cholla Blvd<br>Tucson, Az 85741
+        </div>
+        <div class="contact">
         <h3>Call</h3>
-        520-297-8506
-        <h3>Email</h3>
-        <form action="#" method="post"><br>
-            <table> 
-        <tr> <td>Name:</td> <td><input type="text"></td>
-        </tr>
-        <tr>         
-        <td>Email:</td> <td><input type="email" required></td>
-            </tr>
-                <tr> 
-                    <td>Message:</td> <td><textarea rows="10"></textarea></td>
-                </tr>
-                <tr>
-                <td>How did you hear about us?</td>
-                    <td>
-                    <select name="selReferrer">
-                        <option value="google">Google</option>
-                        <option value="ad">Local Newspaper Ad</option>
-                        <option value="friend">Friend</option>
-                        <option value="other">Other</option>
-                        </select>
-                    </td>
-                </tr>   
-                </table>
-            <input type="submit" value="Submit"> 
-                
-        </form>
+        <p>520-297-8506</p>
+        </div>
     </section>
+    <footer>
+        <table> 
+            <tr> 
+                <td><h4>Hours</h4>Monday- Saturday<br>10am-9pm<br>Sunday<br>11am-6pm<br></td>
+                <td><h4>Location</h4>7401 N.Cholla Blvd<br>Tucson, Az 85741</td>
+                <td><h4>Misc</h4><a href="return.html">Return Policy</a><br><a href="employees/jobs.html">Jobs</a></td>
+                <td><h4>For Employees</h4><a href="employees/employee.html">Schedule</a><a href= "employees/moneyCounter.html"><li>Money Counter</li></a> 
+                </td>
+            </tr> 
+        </table>
+    </footer>
     </div>
-    </body>
-    
+</body>
 </html>
