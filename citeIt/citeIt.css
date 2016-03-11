@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    border-top: solid 20px #2f4f4f;
+    background: radial-gradient(circle, #696969 10%, transparent 10%), radial-gradient(circle, #696969 10%, #937 10%) 25px 25px;
+    background-size: 50px 50px;
+}
+#logo {
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+#content {
+    width: 80%;
+    margin: 0 auto;
+}
+h1 {
+    color: #fff;
+    font-family: monospace;
+    font-size: 3em;
+    text-align: center;
+    border-bottom: dotted;
+}
+#tabs {
+    text-align: center; 
+}
+.tabList li{
+    display: inline-block; 
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: monospace;
+    width: 120px;
+    padding: 10px;
+}
+.tabList .active {
+    border: 1px solid #fff;
+    background-color: #2f4f4f;
+    
+}
+.tabList a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.tabList a:hover {  
+    background-color: #2f4f4f;
+}
+#cited {
+    background-color: #fff;
+    border: 2px solid #2f4f4f;
+    margin-bottom: 2%;
+    padding: 0 1%;
+}
+.tabPanel {
+    display: none;
+    background-color: #2f4f4f;
+    color: #f5f5f5;
+    font-family: sans-serif;
+    border: 2px solid;
+    padding: 4%;
+}
+.tabPanel.active {
+    display: block;
+}
+div.tableRow {
+    display: table-row;
+    height: 2em;
+}
+div.tableRow p {
+    display: table-cell;
+    vertical-align: top;
+    padding: 3px;
+}
+div.tableRow p:first-child {
+    text-align: right;
+    width: 200px;
+}
+div.tableCol {
+    display: inline-block;
+    width: 300px;
+    margin: 0 5%;
+    vertical-align: top;
+}
+input {
+    display: block;
+}
+button {
+    position: relative;
+    float: right;
+    padding: 0.75%;
+    border-radius: 5%;
+    border: outset 2px;
+}
+.red {
+    border-color: red;
+}
+
+@media only screen and (max-width: 768px) {
+    #content {
+        width: 90%;
+    }
+    #tabs {
+        text-align: left;
+        width: 100%;
+        margin: -10px 0;
+    }
+    .tabList li{
+        text-align: center;
+    }
+    div.tableRow p:first-child {
+        width: 140px;
+    }
+    div.tableRow p {
+        vertical-align: bottom;
+    }
+    div.tableRow {
+        height: 2.5em;    
+    }
+    input, div.tableRow p:first-child {
+        line-height: 2em;
+    }
+    input {
+        width: 150px;
+    }
+    button {
+        float: none;
+        position: relative;
+        margin-top: 5px;
+        left: 70%;
+    }
+    
+    
+        
+}
+

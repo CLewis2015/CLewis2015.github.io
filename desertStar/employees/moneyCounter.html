@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Desert Star</title>
+    <meta charset="utf-8">
+    <!--[if li IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link type="text/css" rel="stylesheet" href="../DS.css">
+</head>
+<body>
+    <div class="content">
+    <header>
+        <div id="banner"></div>
+        <nav> 
+            <a href="../../index.html"><img src="../../images/globe.png" id="logo"></a>
+            <ul>
+                <a href="../index.html"><li style="margin-left: -4px">Home</li></a>
+                <a href="../shop.html"><li>Shop</li></a>
+                <a href="../artists.html"><li>About Our Artists</li></a>
+                <a href="../DScontact.html"><li style="border-right: dotted 2px">Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section class="main counter">
+        <form method="get" id="money">
+            <table id="counter">
+                <tr>
+                    <th>Change</th>
+                    <th></th>
+                    <th>Number</th>
+                    <th>Amount</th>
+                    <th>Bills</th>
+                    <th></th>
+                    <th>Number</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Quarters</td><td>0.25 x</td>
+                    <td><input type="number" id="numberq"></td> 
+                    <td id="amountq"></td>
+                    <td>Twenties</td><td>20 x</td>
+                    <td><input type="number" id="numbertw"></td> 
+                    <td id="amounttw"></td>
+                </tr>
+                <tr>
+                    <td>Dimes</td><td>0.10 x </td>
+                    <td><input type="number" id="numberd"></td> 
+                    <td id="amountd"></td> 
+                    <td>Tens</td><td>10 x</td>
+                    <td><input type="number" id="numbertn"></td> 
+                    <td id="amounttn"></td>
+                </tr>
+                <tr>
+                    <td>Nickels</td><td>0.05 x </td>
+                    <td><input type="number" id="numbern"></td> 
+                    <td id="amountn"></td> 
+                    <td>Fives</td><td>5 x</td>
+                    <td><input type="number" id="numberf"></td> 
+                    <td id="amountf"></td>
+                </tr>
+                <tr>
+                    <td>Pennies</td><td>0.01 x </td>
+                    <td><input type="number" id="numberp"></td> 
+                    <td id="amountp"></td> 
+                    <td>Ones</td><td>1 x</td>
+                    <td><input type="number" id="numbero"></td> 
+                    <td id="amounto"></td>
+                </tr>
+                <tr id="totals">
+                    <td colspan="3" style="border: none">Total Change:</td><td id="totalChange"></td>
+                    <td colspan="3" style="border: none">Total Cash:</td><td id="totalCash"></td>
+                </tr>
+            </table>
+            <input type="button" id="calc" value= "Enter"> 
+            <h3>Total:<span id="total"></span></h3>
+        </form>
+    </section>
+    <footer>
+        <table> 
+            <tr> 
+                <td><h4>Hours</h4>Monday- Saturday<br>10am-9pm<br>Sunday<br>11am-6pm<br></td>
+                <td><h4>Location</h4>7401 N.Cholla Blvd<br>Tucson, Az 85741</td>
+                <td><h4>Misc</h4><a href="../return.html">Return Policy</a><br><a href="jobs.html">Jobs</a></td>
+                <td><h4>For Employees</h4><a href= "employee.html"><li>Schedule</li></a><a href= "#"><li>Money Counter</li></a></td>
+            </tr> 
+        </table>
+    </footer>
+    </div>
+    <script src="../../scripts/jquery-1.11.3.js"></script>
+    <script src="../scripts/DS.js"></script>
+</body>
+</html>

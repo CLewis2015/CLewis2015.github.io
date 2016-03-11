@@ -1,0 +1,96 @@
+#logo {
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+body {
+    background-color: #59044a;
+    margin: 0;
+}
+header {
+    margin: 0;
+}
+h1 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    text-shadow: -3px 0 #808, 0 2px #808, 2px 0 #808, 0 -2px #808;
+    margin: 0.5% 1%;
+}
+h2 {
+    text-shadow: -2px 0 #b22222, 0 1px #b22222, 1px 0 #b22222, 0 -1px #b22222;
+    font-family: sans-serif;
+}
+.wrapper {
+    position: relative;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    height: 600px;
+}      
+#shakeIt {
+    margin: 0 auto;
+    width: 420px;
+    height: 410px;
+}
+#result {
+    font-size: 1.5em;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+#ball {
+    background-color:#fff;
+    border-radius: 200px;
+    width: 400px;
+    z-index: 2;
+}
+#msg {
+    position: relative;
+    top: -400px;
+    z-index: -1;
+    width: 400px;
+    border-radius: 200px;
+}
+#magicMsg {
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    width: 20px;
+    height: auto;
+}
+#shakeIt:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+    h1 {
+        margin-top: 15px;
+    }
+    .wrapper {
+        width: 100%;
+        margin-top: 40px;
+    }
+    #msg, #ball {
+        width: 250px;
+    }
+    #msg {
+        top: -255px;
+    }
+    #shakeIt {
+        width: 300px;
+    }
+    #result {
+        margin-top: -90px;
+    }
+    #magicMsg {
+        top: 37%;
+        left: 46%;
+        font-size: 0.85em;
+    }
+}

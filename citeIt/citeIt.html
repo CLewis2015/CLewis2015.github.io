@@ -1,0 +1,157 @@
+<!DOCTYPEhtml>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <title> Citation </title>
+    <link rel="stylesheet" href="citeIt.css" type="text/css">
+</head>
+<body>
+    <!--navigation to portfolio page-->
+    <a href="../index.html"><img src="../images/globe.png" id="logo"></a>
+<div id="content">
+    <header> 
+       <h1>Cite It!</h1>
+        <div id="tabs"> 
+            <ul class="tabList">
+                <li class="active"><a class="tabControl" href="#tab-1">Book</a></li>
+                <li><a class="tabControl" href="#tab-2">Journal</a></li>  
+                <li><a class="tabControl" href="#tab-3">Magazine</a></li>
+                <li><a class="tabControl" href="#tab-4">Newspaper</a></li>
+                <li><a class="tabControl" href="#tab-5">Website</a></li>
+            </ul>    
+        </div>
+    </header> 
+            
+    <div id= "cited"><h3>Your Citation: <span id="citation"></span></h3></div> 
+
+    <!--BOOK-->         
+    <div class="tabPanel active" id="tab-1">
+        <form id="book" class="form">
+            <div class="tableCol">
+                <div class="tableRow"><p>First Name:</p><p><input id="first" type="text" required></p></div>
+                <div class="tableRow"><p>Middle Initial:</p><p><input id="middle" type="text"></p></div>     
+                <div class="tableRow"><p>Last Name:</p><p><input id="last" type="text" required></p></div>  
+                <div class="tableRow"><p>Book Title:</p><p><input id="title" type="text" required></p></div>
+            </div>
+            <div class="tableCol">
+                <div class="tableRow"><p>City:</p><p><input id="city" type="text" required></p></div>
+                <div class="tableRow"><p>State:</p><p><input id="state" type="text" list="stateAbb" required>
+                    <datalist id="stateAbb">
+                        <option value="AL"><option value="AK"><option value="AZ"><option value="AR">        
+                        <option value="CA"><option value="CO"><option value="CT"><option value="DE">        
+                        <option value="FL"><option value="GA"><option value="HI"><option value="ID">        
+                        <option value="IL"><option value="IN"><option value="IA"><option value="KS">        
+                        <option value="KY"><option value="LA"><option value="ME"><option value="MD">        
+                        <option value="MA"><option value="MI"><option value="MN"><option value="MS">        
+                        <option value="MO"><option value="MT"><option value="NE"><option value="NV">        
+                        <option value="NH"><option value="NJ"><option value="NM"><option value="NY">
+                        <option value="NC"><option value="ND"><option value="OH"><option value="OK">        
+                        <option value="OR"><option value="PA"><option value="RI"><option value="SC">        
+                        <option value="SD"><option value="TN"><option value="TX"><option value="UT">
+                        <option value="VT"><option value="VA"><option value="WA"><option value="WV">        
+                        <option value="WI"><option value="WY">
+                    </datalist></p></div>  
+                <div class="tableRow"><p>Publisher:</p><p><input id="publisher" type="text" required></p></div>
+                <div class="tableRow"><p>Copyright Year:</p><p><input id="year" type="text" required></p></div>
+            </div>
+            <br><button type="submit" id="submitB">Cite My Source!</button> 
+        </form>    
+    </div>  
+        
+    <!--JOURNAL-->        
+    <div class="tabPanel" id="tab-2">  
+        <form id="journal" class="form">
+            <div class="tableCol">
+                <div class="tableRow"><p>First Name:</p><p><input id="firstJ" type="text"></p></div>
+                <div class="tableRow"><p>Middle Initial:</p><p><input id="middleJ" type="text"></p></div>
+                <div class="tableRow"><p>Last Name:</p><p><input id="lastJ" type="text"></p></div>  
+                <div class="tableRow"><p>Article Title:</p><p><input id="artTitleJ" type="text"></p></div>    
+                <div class="tableRow"><p>Journal Name:</p><p><input id="titleJ" type="text"></p></div>   
+            </div>
+            <div class="tableCol">
+                <div class="tableRow"><p>Volume:</p><p><input id="volumeJ" type="number"></p></div>
+                <div class="tableRow"><p>Issue:</p><p><input id="issueJ" type="number"></p></div>  
+                <div class="tableRow"><p>Page numbers:</p><p><input id="pagesJ" type="text"></p></div>   
+                <div class="tableRow"><p>Copyright Year:</p><p><input id="yearJ" type="text"></p></div>
+            </div>
+            <br><button type="submit" id="submitJ">Cite My Source!</button>
+        </form>
+    </div>
+    
+    <!--MAGAZINE--> 
+    <div class="tabPanel" id="tab-3">
+        <form id="magazine" class="form">
+            <div class="tableCol">
+                <div class="tableRow"><p>First Name:</p><p><input id="firstM" type="text"></p></div>
+                <div class="tableRow"><p>Middle Initial:</p><p><input id="middleM" type="text"></p></div>
+                <div class="tableRow"><p>Last Name:</p><p><input id="lastM" type="text"></p></div>  
+                <div class="tableRow"><p>Article Title:</p><p><input id="artTitleM" type="text"></p></div>    
+                <div class="tableRow"><p>Magazine Name:</p><p><input id="titleM" type="text"></p></div>   
+            </div>
+            <div class="tableCol">
+                <div class="tableRow"><p>Volume:</p><p><input id="volumeM" type="number"></p></div>
+                <div class="tableRow"><p>Issue:</p><p><input id="issueM" type="number"></p></div>  
+                <div class="tableRow"><p>Page numbers:</p><p><input id="pagesM" type="text"></p></div>
+                <div class="tableRow"><p>Month Published:</p><p><input id="monthM" type="text" list="month"><datalist id="month">
+                    <option value="January">
+                    <option value="February">
+                    <option value="March">
+                    <option value="April">
+                    <option value="May"> 
+                    <option value="June">    
+                    <option value="July">    
+                    <option value="August">    
+                    <option value="September">    
+                    <option value="October">    
+                    <option value="November">    
+                    <option value="December">    
+                    </datalist></p></div>
+                <div class="tableRow"><p>Year Published:</p><p><input id="yearM" type="text"></p></div>
+            </div>
+            <br><button type="submit" id="submitM">Cite My Source!</button>
+        </form>
+    </div>    
+    <!--NEWSPAPER--> 
+    <div class="tabPanel" id="tab-4">
+        <form id="newspaper" class="form">
+            <div class="tableCol">
+                <div class="tableRow"><p>First Name:</p><p><input id="firstN" type="text"></p></div>
+                <div class="tableRow"><p>Middle Initial:</p><p><input id="middleN" type="text"></p></div>
+                <div class="tableRow"><p>Last Name:</p><p><input id="lastN" type="text"></p></div>  
+                <div class="tableRow"><p>Article Title:</p><p><input id="artTitleN" type="text"></p></div>    
+                <div class="tableRow"><p>Newspaper Title:</p><p><input id="titleN" type="text"></p></div>   
+            </div>
+            <div class="tableCol">
+                <div class="tableRow"><p>Volume:</p><p><input id="volumeN" type="number"></p></div>
+                <div class="tableRow"><p>Issue:</p><p><input id="issueN" type="number"></p></div>  
+                <div class="tableRow"><p>Page numbers:</p><p><input id="pagesN" type="text"></p></div>
+                <div class="tableRow"><p>Month Published:</p><p><input id="monthN" type="text" list="month"></p></div>
+                <div class="tableRow"><p>Year Published:</p><p><input id="yearN" type="text"></p></div>
+            </div>
+            <br><button type="submit" id="submitN">Cite My Source!</button>
+        </form>
+    </div>
+    <!--WEBSITE--> 
+    <div class="tabPanel" id="tab-5">
+        <form id="website" class="form">
+            <div class="tableCol">
+                <div class="tableRow"><p>First Name:</p><p><input id="firstW" type="text"></p></div>
+                <div class="tableRow"><p>Middle Initial:</p><p><input id="middleW" type="text"></p></div>
+                <div class="tableRow"><p>Last Name:</p><p><input id="lastW" type="text"></p></div>  
+                <div class="tableRow"><p>Article Title:</p><p><input id="artTitleW" type="text"></p></div>
+            </div>
+            <div class="tableCol"> 
+                <div class="tableRow"><p>URL:</p><p><input id="urlW" type="text"></p></div> 
+                <div class="tableRow"><p>Month Published:</p><p><input id="monthW" type="text" list="month"></p></div>
+                <div class="tableRow"><p>Year Published:</p><p><input id="yearW" type="text"></p></div>
+            </div>
+            <br><button type="submit" id="submitW">Cite My Source!</button>
+        </form>
+    </div>
+</div> 
+    <script src="../scripts/jquery-1.11.3.js"></script>
+   <script src="tab.js"></script>
+    <script src="citeIt.js"></script>
+    </body>
+    
+</html>
