@@ -43,6 +43,7 @@ h1 {
     color: #fff;
     padding: 10px;
     text-align: center;
+    border: none;
 }
 .tabList a:hover {  
     background-color: #2f4f4f;
@@ -93,10 +94,6 @@ button {
     border-radius: 5%;
     border: outset 2px;
 }
-.red {
-    border-color: red;
-}
-
 @media only screen and (max-width: 768px) {
     #content {
         width: 90%;
@@ -129,9 +126,18 @@ button {
         position: relative;
         margin-top: 5px;
         left: 70%;
+    }     
+}
+
+@media only screen and (max-width: 400px) {
+    div.tableRow p:first-child {
+        width: 50%;
     }
-    
-    
-        
+    div.tableCol {
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+        vertical-align: top;
+    }
 }
 

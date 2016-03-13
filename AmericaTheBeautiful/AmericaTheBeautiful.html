@@ -4,76 +4,67 @@
     <meta charset="utf-8">
     <title>America the Beautiful</title>
     <link type="text/css" rel="stylesheet" href="styles/AmericaTheBeautiful.css"> 
-</head>
-    
+</head>  
 <body>
-    <div class="main"> <!--content wrapper-->
-    
-<nav> 
-    <!--navigation to portfolio page-->
-    <a href="../index.html"><img src="../images/globe.png" id="logo"></a>
-      <!--navigation bar to website pages-->
-      <ul id="menu" role="navigation"> 
-        <a href="#"><li>Home</li></a>
-        <a href="map.html"><li>Map</li></a>
-        <a href="imageGallery.html"><li>Image Gallery</li></a>
-          <!--dropdown menu-->
-          <li style="border: none" ><a href="#" id="submenu">Parks</a>
-          <ul id="drop">
-              <a href="nationalparks/badlands.html"><li>Badlands</li></a>
-              <a href="nationalparks/brycecanyon.html"><li>Bryce Canyon</li></a>
-              <a href="nationalparks/olympic.html"><li>Olympic</li></a>
-              </ul>
-          </li> <!--close dropdown menu-->
+<!--content wrapper-->    
+<div class="main"> 
+    <nav> 
+        <!--navigation to portfolio page-->
+        <a href="../index.html"><img src="../images/globe.png" id="logo"></a>
+        <!--navigation bar to website pages-->
+        <ul id="menu" role="navigation"> 
+            <a href="#"><li>Home</li></a>
+            <a href="map.html"><li>Map</li></a>
+            <a href="imageGallery.html"><li>Image Gallery</li></a>
+            <!--dropdown menu-->
+            <li style="border: none" ><a href="#" id="submenu">Parks</a>
+                <ul id="drop">
+                    <a href="nationalparks/badlands.html"><li>Badlands</li></a>
+                    <a href="nationalparks/brycecanyon.html"><li>Bryce Canyon</li></a>
+                    <a href="nationalparks/olympic.html"><li>Olympic</li></a>
+                </ul>
+            </li> <!--close dropdown menu-->
         </ul><!--close navigation bar-->
-</nav>
-        
-<!--name of page and slideshow-->                 
-<header><div class="block">   
-    
-    <div class= "right"><p><em>A dedication to the natural wonders of North America.</em></p></div> 
+    </nav>      
+    <!--name of page and slideshow-->                 
+    <header><div class="block">   
+        <div class= "right"><p><em>A dedication to the natural wonders of North America.</em></p></div> 
         <h1>America the Beautiful</h1>
-    <div class="slider">
-<div class="slide-viewer">
-    <div class="slide-group">
-        <div class="slide slide-1"><img src="images/olympic/dungenessBanner2.JPG" alt="shoreline"></div>
-        <div class="slide slide-2"><img src="images/santeetlahTrailBanner.JPG" alt="cloudy meadow"></div>
-        <div class="slide slide-3"><img src="images/monumentValley/monumentValleyBanner.JPG" alt="red rock formations"></div>
-        <div class="slide slide-4"><img src="images/olympic/hurricaneRidgeBanner.JPG" alt="snowy mountain top"></div>
-    </div>
-</div>
-<div class="slide-buttons"></div>
+        <div class="slider">
+            <div class="slide-viewer">
+                <div class="slide-group">
+                    <div class="slide slide-1"><img src="images/olympic/dungenessBanner2.JPG" alt="shoreline"></div>
+                    <div class="slide slide-2"><img src="images/santeetlahTrailBanner.JPG" alt="cloudy meadow"></div>
+                    <div class="slide slide-3"><img src="images/monumentValley/monumentValleyBanner.JPG" alt="red rock formations"></div>
+                    <div class="slide slide-4"><img src="images/olympic/hurricaneRidgeBanner.JPG" alt="snowy mountain top"></div>
+                </div>
+            </div>
+            <div class="slide-buttons"></div>
         </div>
-        </div></header>  
-        
-<!--table used to create columns; picture links--> 
-        <div class="block thumbs"> 
-<table><tr>
-<!--first column-->  
-    
-        
-            <h2>National Parks</h2> 
-    <td>
-                Badlands, SD<br>
-                <a href="nationalparks/badlands.html">
-                    <img src="images/badlands/badlandsview2thumb.JPG" class="imageHolder" alt="red banded rocks"></a>
-            </td>
-    <td>
-                Bryce Canyon, UT <br>
-                <a href="nationalparks/brycecanyon.html">
-                    <img src="images/bryce/brycecanyonthumb.jpg" class="imageHolder" alt="hoodoos"> </a>
-            </td>
-    <td>
-                Olympic, WA<br>
-                <a href="nationalparks/olympic.html"> 
-                    <img src="images/hurricaneridgethumb.jpg" class="imageHolder" alt="mountain view"></a>
-        
-    </td>
+        </div>
+    </header>     
+    <!--table used to create columns; picture links--> 
+    <div class="block thumbs"> 
+        <table>
+            <tr><h2>National Parks</h2>  
+                <td>Badlands, SD<br>
+                    <a href="nationalparks/badlands.html">
+                        <img src="images/badlands/badlandsview2thumb.JPG" class="imageHolder" alt="red banded rocks"></a>
+                </td>
+                <td>Bryce Canyon, UT<br>
+                    <a href="nationalparks/brycecanyon.html">
+                        <img src="images/bryce/brycecanyonthumb.jpg" class="imageHolder" alt="hoodoos"> </a>
+                </td>
+                <td>Olympic, WA<br>
+                    <a href="nationalparks/olympic.html"> 
+                        <img src="images/hurricaneridgethumb.jpg" class="imageHolder" alt="mountain view"></a>    
+                </td>
 
-</tr></table> 
-        </div>
-<div id="footer">All images were taken by Crystal.</div>
-        </div><!--close main content div-->
+            </tr>
+        </table> 
+    </div>
+    <div id="footer">All images were taken by Crystal.</div>
+</div><!--close main content div-->
     <script src="scripts/jquery-1.11.3.js"></script>
     <script src="scripts/homeSlider.js"></script>
 </body>

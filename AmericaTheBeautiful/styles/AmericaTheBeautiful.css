@@ -127,7 +127,6 @@ table {
     width: 100%;
     text-align: center;
 }
-
 /*----------LINKS---------*/
 a:visited {
     color:#a11111;  
@@ -219,14 +218,6 @@ svg image:hover {
         margin: 0 auto;
         text-align: center;
     }
-    
-    /*#menu li {
-        position: relative;
-        width: 85%;
-        text-align: center;
-        border-right: none;
-        border-bottom: tan 1px dotted;
-    }*/
 }
 /*medium viewport*/
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -246,7 +237,6 @@ svg image:hover {
         max-width: 1200px;
         margin: 10px auto;
     }
-
 }
 
 

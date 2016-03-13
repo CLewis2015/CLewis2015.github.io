@@ -5,173 +5,161 @@
     <title>Image Gallery</title> 
     <link type="text/css" rel="stylesheet" href="styles/AmericaTheBeautiful.css">
     <link type="text/css" rel="stylesheet" href="styles/ImageGallery.css">
-    <script src="scripts/jquery-1.11.3.js"></script>
-    <script src="scripts/imageGallery.js"></script>
-</head>
-    
+</head>   
 <body>
-    <div class="main"> 
-        
-<nav> 
-    <!--navigation to portfolio page-->
-    <a href="../index.html"><img src="../images/globe.png" id="logo"></a>
-    <!--navigation bar to website pages-->
-      <ul id="menu" role="navigation"> 
-        <a href="AmericaTheBeautiful.html"><li>Home</li></a>
-        <a href="map.html"><li>Map</li></a>
-        <a href="imageGallery.html"><li>Image Gallery</li></a>
-          <li style="border: none"><a href="#" id="submenu">Parks</a>
-          <ul id="drop">
-              <a href="nationalparks/badlands.html"><li>Badlands</li></a>
-              <a href="nationalparks/brycecanyon.html"><li>Bryce Canyon</li></a>
-              <a href="nationalparks/olympic.html"><li>Olympic</li></a>
-              </ul>
-          </li>
+<div class="main">
+    <nav> 
+        <!--navigation to portfolio page-->
+        <a href="../index.html"><img src="../images/globe.png" id="logo"></a>
+        <!--navigation bar to website pages-->
+        <ul id="menu" role="navigation"> 
+            <a href="AmericaTheBeautiful.html"><li>Home</li></a>
+            <a href="map.html"><li>Map</li></a>
+            <a href="imageGallery.html"><li>Image Gallery</li></a>
+            <li style="border: none"><a href="#" id="submenu">Parks</a>
+                <ul id="drop">
+                    <a href="nationalparks/badlands.html"><li>Badlands</li></a>
+                    <a href="nationalparks/brycecanyon.html"><li>Bryce Canyon</li></a>
+                    <a href="nationalparks/olympic.html"><li>Olympic</li></a>
+                </ul>
+            </li>
         </ul>
-</nav>
-        
-<div class="block">
-    <header><h1>Image Gallery</h1></header>
-    
-<!--the gallery-->    
-<div class="gallery-carousel">
-    
-<!--side div with info actually displayed; is swapped out for each picture-->
-<div id="gallery-image-info">
-    <h3 id="gallery-image-title">Bison along the roadside</h3>
-    <div id="gallery-image-location">Location: <br><span>Badlands National Park, SD</span></div>
-</div>
-    
-    <!--box with big image-->
-    <div id="gallery-large-image"> 
-        <table cellpadding="0" cellspacing="0" border="0">
-            <tr><td><img src="images/badlands/medium_576x384/IMG_1088.JPG"></td></tr>
-        </table>
- <!--left side-->
-<a title="View previous photo" class="gallery_hover gallery_hover_prev" href="#" id="rew-link-1">
-    <div class="anchor-fill"></div><div>&nbsp;</div><div class="anchor-fill"></div></a>
- <!--right side-->
-<a title="View next photo" class="gallery_hover gallery_hover_next" href="#" id="ffw-link-1">
-    <div class="anchor-fill"></div><div>&nbsp;</div><div class="anchor-fill"></div></a>
-			</div> <!--end large image box-->
-    
-<!--bottom div with thumbnails and corresponding info-->  
-<div id="gallery-thumbnails">
-    <!--just thumbnails-->
-    <div id="thumbnails" class="gallery-thumbs">
-        <!--thumbnail slider-->
-        <div id="thumbnail-slider" style="width: 1600px; left:-0px;">
-            <!--starter selected image-->
-            <a href="#" class="selected-image"><img src="images/badlands/medium_576x384/IMG_1088.JPG">
-                <div class="zoom-icon" style="display: block;"><img src="images/white-pixel.gif"></div></a>
-            <!--"link" to select image-->  
-            <a href="#"><img src="images/badlands/medium_576x384/IMG_1168.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_6551MedicineBow.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>  
-            <a href="#"><img src="images/stock_images/Urchins.jpg">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/olympic/medium_576x384/Dungeness/IMG_0195Dungeness.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_1546.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_2048.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_6453WildhorseCamp.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_6517.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/monumentValley/monumentvalley.jpg">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_9202MexiHAt.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_9240Gooseneck.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_9834.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_9676UT.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_6206WindfarmPawneeButtes.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_6033MollyLakeCO.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_6049MollyLakeCO.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_2279Fontana.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_2393.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_2310.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/seagulls.jpg">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-            <a href="#"><img src="images/stock_images/IMG_3518.JPG">
-                <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
-                        
-					</div><!--close thumbnail slider-->
-				</div><!--close gallery thumbs-->
-<!--thumbnail scroll arrows-->
-<img class="scroll-arrow arrow-inactive" id="rew-link" src="images/arrow-scroll-left.png" alt="Previous image"/>
-<img class="scroll-arrow" id="ffw-link" src="images/arrow-scroll-right.png" alt="Next image"/>
-    
-<!--<div id="large-gallery-thumbnail"></div>-->
-    
-<!--tells which photo user is on-->
-<div id="scroll-text-info">Photo <span id="scroll-info-current">1</span> of <span id="scroll-info-total">22</span></div>
-
-<!--fills in title-->    
-<div id="thumbnail-descriptions">
-	<span>Bison along the roadside</span>
-    <span>View from Badlands Loop</span>
-    <span>Sunset among rolling hills</span>
-    <span>Pacific blood star among purple sea urchins</span>
-    <span>View of the Strait of Juan de Fuca</span>
-    <span>Red stripes in rock</span>
-    <span>Sunrise against Steens Mountain</span>
-    <span>Clouds creeping over the mountains</span>
-    <span>Beautiful teal colored Elk River</span>
-    <span>View of the Mittens</span>
-    <span>Rock shaped like a sombrero</span>
-    <span>Deep meander of the San Juan River</span>
-    <span>Close-up of hoodoos in the Cathedral</span>
-    <span>Nice view from trail</span>
-    <span>Sunset behind a windfarm</span>
-    <span>View from Molly Lake Trail</span>
-    <span>Flower-filled valley</span>
-	<span>Canoeing through Fonatana Lake</span>
-    <span>Blooming flower</span>
-    <span>Rhododendron in bloom</span>
-    <span>Seagulls up close</span>
-	<span>Blue Heron taking a stroll</span>
-</div>
-<!--fills in location-->    
-<div id="thumbnail-dates">
-	<span>Badlands National Park, SD</span>
-    <span>Badlands National Park, SD</span>
-    <span>Medicine Bow National Forest, WY</span>
-    <span>Olympic National Park, WA</span>
-    <span>Dungeness Recreation Area, WA</span>
-    <span>John Day Painted Hills National Monument, OR</span>
-    <span>Alvord Playa, OR</span>
-    <span>Siskiyou National Forest, OR</span>
-    <span>Siskiyou National Forest, OR</span>
-    <span>Monument Valley Navajo Tribal Park, UT</span>
-    <span>Mexican Hat, UT</span>
-    <span>Gooseneck National Park, UT</span>
-    <span>Bryce National Park, UT</span>
-    <span>Dixie National Forest, UT</span>
-    <span>Pawnee National Grassland, CO</span>
-    <span>Roosevelt National Forest, CO</span>
-    <span>Roosevelt National Forest, CO</span>
-	<span>Nantahala National Forest, NC</span>
-    <span>Nantahala National Forest, NC</span>
-    <span>Nantahala Natioanl Forest, NC</span>
-	<span>Edisto Beach State Park, SC</span>
-	<span>Crescent Beach, FL</span>
-</div>
-</div><!--close gallery thumbnails-->
+    </nav>    
+    <div class="block">
+        <header><h1>Image Gallery</h1></header>
+        <!--the gallery-->    
+        <div class="gallery-carousel">
+            <!--side div with info actually displayed; is swapped out for each picture-->
+            <div id="gallery-image-info">
+                <h3 id="gallery-image-title">Bison along the roadside</h3>
+                <div id="gallery-image-location">Location: <br><span>Badlands National Park, SD</span></div>
+            </div>
+            <!--box with big image-->
+            <div id="gallery-large-image"> 
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tr><td><img src="images/badlands/medium_576x384/IMG_1088.JPG"></td></tr>
+                </table>
+                <!--left side-->
+                <a title="View previous photo" class="gallery_hover gallery_hover_prev" href="#" id="rew-link-1">
+                    <div class="anchor-fill"></div><div>&nbsp;</div><div class="anchor-fill"></div></a>
+                <!--right side-->
+                <a title="View next photo" class="gallery_hover gallery_hover_next" href="#" id="ffw-link-1">
+                    <div class="anchor-fill"></div><div>&nbsp;</div><div class="anchor-fill"></div></a>
+            </div> <!--end large image box-->
+            <!--bottom div with thumbnails and corresponding info-->  
+            <div id="gallery-thumbnails">
+                <!--just thumbnails-->
+                <div id="thumbnails" class="gallery-thumbs">
+                    <!--thumbnail slider-->
+                    <div id="thumbnail-slider" style="width: 1600px; left:-0px;">
+                        <!--starter selected image-->
+                        <a href="#" class="selected-image"><img src="images/badlands/medium_576x384/IMG_1088.JPG">
+                            <div class="zoom-icon" style="display: block;"><img src="images/white-pixel.gif"></div></a>
+                        <!--"link" to select image-->  
+                        <a href="#"><img src="images/badlands/medium_576x384/IMG_1168.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_6551MedicineBow.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>  
+                        <a href="#"><img src="images/stock_images/Urchins.jpg">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/olympic/medium_576x384/Dungeness/IMG_0195Dungeness.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_1546.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_2048.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_6453WildhorseCamp.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_6517.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/monumentValley/monumentvalley.jpg">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_9202MexiHAt.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_9240Gooseneck.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_9834.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_9676UT.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_6206WindfarmPawneeButtes.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_6033MollyLakeCO.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_6049MollyLakeCO.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_2279Fontana.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_2393.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_2310.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/seagulls.jpg">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                        <a href="#"><img src="images/stock_images/IMG_3518.JPG">
+                            <div class="zoom-icon"><img src="images/white-pixel.gif"></div></a>
+                    </div><!--close thumbnail slider-->			    
+                </div><!--close gallery thumbs-->
+                <!--thumbnail scroll arrows-->
+                <img class="scroll-arrow arrow-inactive" id="rew-link" src="images/arrow-scroll-left.png" alt="Previous image"/>
+                <img class="scroll-arrow" id="ffw-link" src="images/arrow-scroll-right.png" alt="Next image"/>
+                <!--tells which photo user is on-->
+                <div id="scroll-text-info">Photo <span id="scroll-info-current">1</span> of <span id="scroll-info-total">22</span></div>
+                <!--fills in title-->    
+                <div id="thumbnail-descriptions">
+                    <span>Bison along the roadside</span>
+                    <span>View from Badlands Loop</span>
+                    <span>Sunset among rolling hills</span>
+                    <span>Pacific blood star among purple sea urchins</span>
+                    <span>View of the Strait of Juan de Fuca</span>
+                    <span>Red stripes in rock</span>
+                    <span>Sunrise against Steens Mountain</span>
+                    <span>Clouds creeping over the mountains</span>
+                    <span>Beautiful teal colored Elk River</span>
+                    <span>View of the Mittens</span>
+                    <span>Rock shaped like a sombrero</span>
+                    <span>Deep meander of the San Juan River</span>
+                    <span>Close-up of hoodoos in the Cathedral</span>
+                    <span>Nice view from trail</span>
+                    <span>Sunset behind a windfarm</span>
+                    <span>View from Molly Lake Trail</span>
+                    <span>Flower-filled valley</span>
+                    <span>Canoeing through Fonatana Lake</span>
+                    <span>Blooming flower</span>
+                    <span>Rhododendron in bloom</span>
+                    <span>Seagulls up close</span>
+                    <span>Blue Heron taking a stroll</span>
+                </div>
+                <!--fills in location-->    
+                <div id="thumbnail-locations">
+                    <span>Badlands National Park, SD</span>
+                    <span>Badlands National Park, SD</span>
+                    <span>Medicine Bow National Forest, WY</span>
+                    <span>Olympic National Park, WA</span>
+                    <span>Dungeness Recreation Area, WA</span>
+                    <span>John Day Painted Hills National Monument, OR</span>
+                    <span>Alvord Playa, OR</span>
+                    <span>Siskiyou National Forest, OR</span>
+                    <span>Siskiyou National Forest, OR</span>
+                    <span>Monument Valley Navajo Tribal Park, UT</span>
+                    <span>Mexican Hat, UT</span>
+                    <span>Gooseneck National Park, UT</span>
+                    <span>Bryce National Park, UT</span>
+                    <span>Dixie National Forest, UT</span>
+                    <span>Pawnee National Grassland, CO</span>
+                    <span>Roosevelt National Forest, CO</span>
+                    <span>Roosevelt National Forest, CO</span>
+                    <span>Nantahala National Forest, NC</span>
+                    <span>Nantahala National Forest, NC</span>
+                    <span>Nantahala Natioanl Forest, NC</span>
+                    <span>Edisto Beach State Park, SC</span>
+                    <span>Crescent Beach, FL</span>
+                </div>
+            </div><!--close gallery thumbnails-->
         </div><!--end gallery-->
     </div><!--end block div-->
 </div><!--end main content-->
-    </body>
-    </html>
+    <script src="scripts/jquery-1.11.3.js"></script>
+    <script src="scripts/imageGallery.js"></script>
+</body>
+</html>

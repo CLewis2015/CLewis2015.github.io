@@ -8,14 +8,12 @@
     margin: 0 0 10px 0;
     padding: 0; 
 }
-
 /*------for the page navigation------*/
 .jumpTo {
     float: right;
     font-size: 0.65em;
     text-align: bottom;
 }
-
 table {
     vertical-align: top;
     margin: 0px auto;
@@ -26,8 +24,7 @@ table td {
     padding: 10px;
     width: 32%;
     vertical-align: text-top;
-}
-       
+}       
 h3 {
     font-family: fantasy;
     font-size: 1.5em;
@@ -36,7 +33,6 @@ h3 {
     border-bottom-style: ridge;
     border-bottom-color: #a11111;
 }
-
 /*---for link section---*/
 .block a {
     font-family: serif;
@@ -60,10 +56,9 @@ h3 {
     margin-left: 30px;
 }
 video {
- width: 80%   
+    width: 80%   
 }
-
-/*------Image Gallery (mobile first design)------*/
+/*------Image Gallery------*/
 .gallery-image-area .featured-image-item { 
     display: none; 
 } 
@@ -89,7 +84,6 @@ ul {
     margin: 0 auto;
     clear: both;
 }
-
 .block .gallery-showcase ul li {
     list-style: none;
 }
@@ -103,7 +97,6 @@ ul {
     float: right;
     width: 20%;
 }
-
 /*------------for google maps----------*/
 #map {
     width: 500px;
@@ -115,8 +108,3 @@ ul {
     width: 400px;
     margin-right: 80px;
 }
-
-
-
-
-

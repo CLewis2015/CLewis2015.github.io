@@ -229,8 +229,8 @@ button {
     float: right;
     margin-right: 15px;
     margin-top: 20px;
-    font-size: 2em;
-    width: 70px;
+    font-size: 1.5em;
+    width: auto;
 }
 #money h3 {
     text-align: center;

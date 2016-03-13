@@ -46,7 +46,6 @@ a.gallery_hover {
     position: absolute;
     top: 0px;
     width: 270px;
-    border: none;
 }
 a.gallery_hover:hover {
     opacity: 0.6;
@@ -54,7 +53,6 @@ a.gallery_hover:hover {
 a.gallery_hover_next {
     left: 317px;
     width: 270px;
-    border: none;
 }
 a.gallery_hover div {
     background: transparent url("../images/slideshow_sprite.gif") no-repeat 0 0;
@@ -194,6 +192,6 @@ img.scroll-arrow {
     line-height: 1;
 }
 #thumbnail-descriptions,
-#thumbnail-dates {
+#thumbnail-locations {
     display: none;
 }

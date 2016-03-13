@@ -10,7 +10,7 @@
         e.preventDefault();      //prevents link behavior 
         var $link = $(this);      //hold current link inside jQuery object
         var id = this.hash;        //get href from tab that was clicked
-       
+        $("#citation").html("");
     if (id && !$link.is(".active")) {     //if not currently active
         $panel.removeClass("active");   //make panel and tab inactive
         $tab.removeClass("active");
