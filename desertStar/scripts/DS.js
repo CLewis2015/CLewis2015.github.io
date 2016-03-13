@@ -1,5 +1,5 @@
 $(document).ready(function () {
-/*------Triggers calculation when user presses enter------*/    
+/*------Triggers calculation when user presses enter------*/
     $("#money").keypress(function (e) {
         var code = e.keyCode || e.which;
         if (code === 13) {
@@ -8,13 +8,13 @@ $(document).ready(function () {
         }
     });
     
-/*------Allows user to tab vertically instead of horizontally------*/     
+/*------Allows user to tab vertically instead of horizontally------*/
     $("tr").each(function () {
-        $(this).find("td").each(function(i) {
-            $(this).find("input").attr("tabindex", i+1);
+        $(this).find("td").each(function (i) {
+            $(this).find("input").attr("tabindex", i + 1);
         });
     });
-/*------Calculates the total amount of money------*/ 
+/*------Calculates the total amount of money------*/
     $("#calc").click(function () {
         var numberq = document.getElementById("numberq").value;
         var quarter = 0.25;
@@ -42,28 +42,28 @@ $(document).ready(function () {
         
         var totalCh = Math.round((totalq + totald + totaln + totalp) * 100) / 100;
         var totalChange =  document.getElementById("totalChange");
-        totalChange.textContent = " $" + (totalCh).toFixed(2); 
+        totalChange.textContent = " $" + (totalCh).toFixed(2);
         
         var numbertw = document.getElementById("numbertw").value;
-        var twenty = 20;    
+        var twenty = 20;
         var totaltw = twenty * numbertw;
         var amounttw = document.getElementById("amounttw");
         amounttw.textContent = totaltw;
         
         var numbertn = document.getElementById("numbertn").value;
-        var ten = 10;    
+        var ten = 10;
         var totaltn = ten * numbertn;
         var amounttn = document.getElementById("amounttn");
-        amounttn.textContent = totaltn;  
+        amounttn.textContent = totaltn;
         
         var numberf = document.getElementById("numberf").value;
-        var five = 5;    
+        var five = 5;
         var totalf = five * numberf;
         var amountf = document.getElementById("amountf");
-        amountf.textContent = totalf;    
+        amountf.textContent = totalf;
         
         var numbero = document.getElementById("numbero").value;
-        var one = 1;    
+        var one = 1;
         var totalo = one * numbero;
         var amounto = document.getElementById("amounto");
         amounto.textContent = totalo;
@@ -74,6 +74,6 @@ $(document).ready(function () {
         
         var totalAll = totalCsh + totalCh;
         var total = document.getElementById("total");
-        total.textContent = " $" + (totalAll).toFixed(2);   
+        total.textContent = " $" + (totalAll).toFixed(2);
     });
 });

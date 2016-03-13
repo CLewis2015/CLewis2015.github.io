@@ -80,12 +80,18 @@ footer table h4 {
     border-bottom: dotted 2px;
     width: 80%; 
 }
-footer table tr{
+footer table tr {
     vertical-align:top;
 }
-a:link {
+footer a:link {
+    box-sizing: border-box;
     text-decoration: none;
     color: #FFF8DC;
+    padding: 1px;
+}
+footer a:hover {
+    background-color: #FFF8DC;
+    color: #8B4513;
 }
 a:visited {
     color: #FFF8DC;
@@ -115,7 +121,6 @@ table {
     height: auto;
     padding: 5%;
 }
-
 /*----Contact----*/
 .contact {
     width: 80%;
@@ -127,12 +132,14 @@ table {
     margin: 0;
 }
 .contact a {
-    color: #359077;
+    color: #8B4513;
+}
+.contact a:hover {
+    font-style: italic;
 }
 .contact h4 {
     margin: 0;
 }
-
 /*----Artists----*/
 .artists {
     box-sizing: border-box;
@@ -271,6 +278,4 @@ button {
         padding-bottom: 5%;
         text-align: center;
     } 
-    
-    }
-    
+}    

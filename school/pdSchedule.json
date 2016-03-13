@@ -4,7 +4,7 @@
         "time":"9:30",
         "title":"Instructional Technology Tools"
         },
-         {
+        {
         "time":"10:30",
         "title":"New Science Standards"
         }, 
@@ -20,13 +20,13 @@
         "time":"1:30",
         "title":"CCSS Science Writing"
         }
-        ],
+    ],
     "BA": [
         {
         "time":"9:30",
         "title":"SmartBoard Use and Tools"
         },
-         {
+        {
         "time":"10:30",
         "title":"Classroom First Aid"
         }, 
@@ -42,13 +42,13 @@
         "time":"1:30",
         "title":"Powerful Presentations"
         }
-        ],
+    ],
     "CA": [
         {
         "time":"9:30",
         "title":"Teacher Toolbox"
         },
-         {
+        {
         "time":"10:30",
         "title":"Gang Awareness"
         },
@@ -64,6 +64,5 @@
         "time":"1:30",
         "title":"Data and More Data"
         }
-        ]
-}
-        
+    ]
+}       
