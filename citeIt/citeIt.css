@@ -88,11 +88,16 @@ input {
     display: block;
 }
 button {
-    position: relative;
-    float: right;
     padding: 0.75%;
     border-radius: 5%;
     border: outset 2px;
+    position: relative;
+    margin-top: 10px;
+    float: right;
+    clear: both;
+}
+.buttons {
+    height: 80px;
 }
 @media only screen and (max-width: 768px) {
     #content {
@@ -128,7 +133,6 @@ button {
         left: 70%;
     }     
 }
-
 @media only screen and (max-width: 400px) {
     div.tableRow p:first-child {
         width: 50%;
@@ -140,4 +144,3 @@ button {
         vertical-align: top;
     }
 }
-
