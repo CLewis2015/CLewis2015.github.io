@@ -115,7 +115,7 @@ table {
 }
 #products img {
     background-image:  url(images/stuccoWall.jpg);
-    background-position: center;
+    background-position: right;
     border: #8B4513 ridge 5px;
     width: 200px;
     height: auto;

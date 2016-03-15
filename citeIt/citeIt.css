@@ -65,27 +65,38 @@ h1 {
 .tabPanel.active {
     display: block;
 }
+.form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 div.tableRow {
+    
     display: table-row;
     height: 2em;
 }
 div.tableRow p {
     display: table-cell;
-    vertical-align: top;
-    padding: 3px;
+    vertical-align: bottom;
+    font-size: 1.15em;
+    width: 30%;
 }
 div.tableRow p:first-child {
     text-align: right;
-    width: 200px;
+    width: 35%;
 }
 div.tableCol {
     display: inline-block;
-    width: 300px;
-    margin: 0 5%;
+    width: 49%;
     vertical-align: top;
 }
 input {
-    display: block;
+    display: inline-block;
+    width: 125px;
+    margin-left: 3%;
+}
+input:focus {
+    outline-offset: 0;
 }
 button {
     padding: 0.75%;
@@ -99,9 +110,20 @@ button {
 .buttons {
     height: 80px;
 }
-@media only screen and (max-width: 768px) {
+.red {
+    border: red solid 2px;
+}
+#msg, #msgJ, #msgM, #msgN {
+    color: red;
+    visibility: hidden;
+    font-size: 1.2em;
+    font-weight: 300;
+    float: left;
+    text-shadow: -2px 0 0.2em #000, 0 2px 0.2em #000, 2px 0 0.2em #000, 0 -2px 0.2em #000; 
+}
+@media only screen and (max-width: 650px) {
     #content {
-        width: 90%;
+        width: 95%;
     }
     #tabs {
         text-align: left;
@@ -111,8 +133,14 @@ button {
     .tabList li{
         text-align: center;
     }
+    div.tableCol {
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+        vertical-align: top;
+    }
     div.tableRow p:first-child {
-        width: 140px;
+        width: 40%;
     }
     div.tableRow p {
         vertical-align: bottom;
@@ -122,25 +150,5 @@ button {
     }
     input, div.tableRow p:first-child {
         line-height: 2em;
-    }
-    input {
-        width: 150px;
-    }
-    button {
-        float: none;
-        position: relative;
-        margin-top: 5px;
-        left: 70%;
-    }     
-}
-@media only screen and (max-width: 400px) {
-    div.tableRow p:first-child {
-        width: 50%;
-    }
-    div.tableCol {
-        display: inline-block;
-        width: 100%;
-        margin: 0 auto;
-        vertical-align: top;
-    }
+    }  
 }

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-// for tab list in about section 
+//for tab list in about section 
     $(".tabList").each(function () {     //find list of tabs
         var $this = $(this);                //store as current tabs
         var $tab = $this.find("li.active"); //get active tab
@@ -10,7 +10,14 @@ $(document).ready(function () {
             e.preventDefault();      //prevents link behavior 
             var $link = $(this);      //hold current link inside jQuery object
             var id = this.hash;        //get href from tab that was clicked
-            $("#citation").html("");
+            var $allInput = $(":input");
+            $allInput.val("");
+            $('[required]').removeClass("red");
+            $("#msg").css("visibility", "hidden");
+            $("#msgJ").css("visibility", "hidden");
+            $("#msgM").css("visibility", "hidden");
+            $("#msgN").css("visibility", "hidden");
+            $("#citation").html(""); 
             if (id && !$link.is(".active")) {     //if not currently active
                 $panel.removeClass("active");   //make panel and tab inactive
                 $tab.removeClass("active");
