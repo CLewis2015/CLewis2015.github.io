@@ -39,7 +39,7 @@
 <body>
     <nav> 
         <ul role=navigation>
-        <a href ="../../index.html"><img src="../../images/globe.png" id="logo"></a>
+        <a href ="../../index.html" id="logoA"><img src="../../images/globe.png" id="logo"></a>
             <li><a href="../biologybird.html"> Home </a></li>
             <li><a href="cellRespPpt.html">Notes</a></li>
             <li><a href="cellLab.html">Lab</a></li>

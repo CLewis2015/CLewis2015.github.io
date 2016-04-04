@@ -41,6 +41,9 @@ a.current {
     top: 10px;
     left: 10px;
 }
+#logoA:hover {
+    background: none;
+}
 header {
     padding: 20px;
     text-align: center;
