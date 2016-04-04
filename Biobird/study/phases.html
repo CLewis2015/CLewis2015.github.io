@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset = "utf-8">
+    <title> Mitosis Phases</title>
+    <link type="text/css" rel="stylesheet" href="../styles/biologybird.css">
+    <link type="text/css" rel="stylesheet" href="../../scripts/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+    <link type="text/css" rel="stylesheet" href="../styles/phases.css">
+    <script src="../../scripts/jquery-1.11.3.js"></script>
+        <script src="../../scripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script> 
+    <script>
+  $(function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  });
+        $('.sortable').sortable().bind('sortupdate', function() {
+    var order = $('.sortable').toArray();
+    $('#statements').val(order.join(','));
+});
+        
+      /*  $(".sortable").sortable({
+    stop: function(event, ui) {
+        var data = "";
+
+        $(".sortable").each(function(i, el){
+            var ord = $(el).text();
+            data += ord+"="+$(el).index()+",";
+        });
+
+        $('#statements').val(data);
+    }
+});*/
+        
+  </script>
+</head>
+    <body>
+        <nav> 
+        <a href ="../../index.html" id="logoA"><img src="../../images/globe.png" id="logo"></a>
+        <ul role=navigation>
+            <li><a href="../biologybird.html"> Home </a></li>
+            <li><a href="cellRespPpt.html">Notes</a></li>
+            <li><a href="cellLab.html">Lab</a></li>
+            <li><a href="mitosis.html">Study</a></li>
+            <li><a href="#" id="phpAlert">Quiz</a></li>
+        </ul>
+    </nav>
+        <div id="order">
+        <table> 
+            <tr><td>1</td> </tr>
+            <tr><td>2</td> </tr>
+            <tr><td>3</td> </tr>
+            <tr><td>4</td> </tr>
+            <tr><td>5</td> </tr>
+            <tr><td>6</td> </tr>
+            </table>
+    <ul id="sortable">
+  <li class="ui-state-default" id="1"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Telephase</li>
+  <li class="ui-state-default" id="2"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Interphase</li>
+  <li class="ui-state-default" id="3"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Anapahse</li>
+  <li class="ui-state-default" id="4"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Cytokinesis</li>
+  <li class="ui-state-default" id="5"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Prophase</li>
+  <li class="ui-state-default" id="6"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Metaphase</li>
+</ul>
+            <button type="button">Enter</button>
+     </div> 
+           
+    </body>
+    </html>

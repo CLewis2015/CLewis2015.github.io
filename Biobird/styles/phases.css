@@ -1,0 +1,28 @@
+#sortable { 
+      list-style-type: none; 
+      margin: 0; 
+      margin-left: 50px;
+      padding: 0; 
+      width: 60%; 
+        }
+  #sortable li { 
+      margin: 0 3px 3px 3px; 
+      padding: 0.4em; 
+      padding-left: 1.5em; 
+      font-size: 1.4em; 
+      height: 18px; 
+        }
+  #sortable li span { 
+      position: absolute; 
+      margin-left: -1.3em; 
+        }
+        table {
+            float: left;
+            padding: 0;
+        }
+        table td { 
+      padding-top: 0.3em; 
+            padding-bottom: 0.31em;
+      padding-left: 1.5em; 
+      font-size: 1.45em; 
+        } 
